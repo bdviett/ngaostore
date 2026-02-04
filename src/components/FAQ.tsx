@@ -44,7 +44,7 @@ export default function FAQ() {
               Bạn có câu hỏi khác? Liên hệ ngay với đội ngũ hỗ trợ của chúng tôi để được tư vấn miễn phí.
             </p>
             <button className="bg-secondary text-white px-8 py-4 rounded-2xl font-bold transition-all hover:bg-secondary-dark">
-              <a target="_blank" href="tel:0988012895">Liên Hệ Hỗ Trợ</a>
+              <a target="_blank" href="http://zalo.me/0988012895">Liên Hệ Hỗ Trợ</a>
             </button>
           </div>
 

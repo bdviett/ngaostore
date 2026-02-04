@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ShoppingCart, Menu, X, Phone } from "lucide-react";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
+import Image from "next/image";
 
 function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -41,9 +42,10 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <div className="bg-primary p-2 rounded-lg">
+          {/* <div className="bg-primary p-2 rounded-lg">
             <span className="text-white font-bold text-xl">N</span>
-          </div>
+          </div> */}
+          <Image src="/android-512x512.png" alt="Ngáo Store" width={64} height={64} />
           <span className={cn(
             "font-bold text-xl tracking-tight",
             isScrolled ? "text-secondary" : "text-white"
@@ -70,7 +72,7 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center gap-4">
           <Link
-            href="tel:0988012895"
+            href="http://zalo.me/0988012895"
             className={cn(
               "flex items-center gap-2 text-sm font-semibold px-4 py-2 rounded-full border transition-all",
               isScrolled
