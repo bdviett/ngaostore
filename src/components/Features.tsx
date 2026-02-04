@@ -1,10 +1,10 @@
 import React from "react";
-import { 
-  Wifi, 
-  Settings, 
-  Smartphone, 
-  Lock, 
-  RefreshCw, 
+import {
+  Wifi,
+  Settings,
+  Smartphone,
+  Lock,
+  RefreshCw,
   Zap,
   Globe,
   LifeBuoy
@@ -13,7 +13,7 @@ import {
 const features = [
   {
     title: "Sóng Khỏe & Ổn Định",
-    desc: "Cải thiện khả năng bắt sóng, hỗ trợ 4G/5G cực tốt như máy Quốc Tế.",
+    desc: "Khả năng bắt sóng ở khu vực thành phố hay vùng nông thôn đều rất tốt, hỗ trợ 4G/5G ổn định như máy Quốc Tế.",
     icon: <Wifi className="w-8 h-8" />,
     color: "bg-blue-500"
   },
@@ -25,25 +25,25 @@ const features = [
   },
   {
     title: "Hỗ Trợ Mọi iOS",
-    desc: "Từ iOS cũ đến iOS 19, 20 mới nhất đều có thể kích hoạt mượt mà.",
+    desc: "Từ iOS cũ đến iOS mới nhất đều có thể kích hoạt mượt mà. Bạn không cần lo lắng về vấn đề về phiên bản iOS.",
     icon: <Smartphone className="w-8 h-8" />,
     color: "bg-purple-500"
   },
   {
     title: "Dễ Dàng Cài Đặt",
-    desc: "Chỉ cần lắp sim vào là máy tự động nhận, không cần cấu hình phức tạp, hỗ trợ tự động kích hoạt.",
+    desc: "Chỉ cần lắp sim vào là máy tự động nhận, không cần cấu hình phức tạp, hỗ trợ kích hoạt online nếu gặp khó khăn.",
     icon: <Zap className="w-8 h-8" />,
     color: "bg-yellow-500"
   },
   {
     title: "Bảo Mật Tuyệt Đối",
-    desc: "Sim ghép không can thiệp phần cứng, iCloud, không ảnh hưởng đến chức năng của máy.",
+    desc: "Sim ghép không can thiệp phần cứng, dữ liệu, iCloud. Hoàn toàn không ảnh hưởng đến chức năng của máy.",
     icon: <Lock className="w-8 h-8" />,
     color: "bg-green-500"
   },
   {
     title: "Cập Nhật Liên Tục",
-    desc: "Phần mềm được cập nhật thường xuyên để thích nghi với các bản iOS mới nhất.",
+    desc: "Phần mềm sim ghép được cập nhật thường xuyên để thích nghi với các bản iOS mới nhất.",
     icon: <RefreshCw className="w-8 h-8" />,
     color: "bg-orange-500"
   },
@@ -79,7 +79,7 @@ export default function Features() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, idx) => (
-            <div 
+            <div
               key={idx}
               className="p-8 rounded-[32px] border border-gray-100 hover:border-primary/20 hover:shadow-2xl hover:shadow-primary/5 transition-all group"
             >

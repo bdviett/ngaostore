@@ -5,7 +5,7 @@ import Compatibility from "@/components/Compatibility";
 import Pricing from "@/components/Pricing";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
-import BackToTop from "@/components/BackToTop";
+import ContactPinned from "@/components/ContactPinned";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <Pricing />
       <FAQ />
       <Footer />
-      <BackToTop />
+      <ContactPinned />
     </main>
   );
 }

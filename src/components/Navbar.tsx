@@ -81,10 +81,10 @@ export default function Navbar() {
             )}
           >
             <Phone size={16} />
-            0988 012 895
+            Hỗ trợ ghép sim
           </Link>
-          <button className="bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-full font-semibold transition-all shadow-lg shadow-primary/20">
-            <a target="_blank" href="https://shopee.vn/ngaostore86">Mua Ngay</a>
+          <button className="bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-full font-semibold transition-all shadow-lg shadow-primary/20 hover:shadow-primary/40">
+            <a target="_blank" href="https://shopee.vn/ngaostore86">Mua hàng tại Shopee</a>
           </button>
         </div>
 
@@ -119,10 +119,10 @@ export default function Navbar() {
               className="flex items-center justify-center gap-2 text-secondary font-semibold py-3 rounded-xl border border-gray-200"
             >
               <Phone size={18} />
-              0988 012 895
+              Hỗ trợ ghép sim
             </Link>
             <button className="bg-primary text-white py-3 rounded-xl font-bold">
-              <a target="_blank" href="https://shopee.vn/ngaostore86">Mua Ngay</a>
+              <a target="_blank" href="https://shopee.vn/ngaostore86">Mua hàng tại Shopee</a>
             </button>
           </div>
         </div>

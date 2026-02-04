@@ -5,16 +5,16 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 
 const faqs = [
   {
-    q: "Shop có hỗ trợ ghép sim không? Nếu có thì phí bao nhiêu?",
-    a: "Tất cả sim ghép mua tại Ngáo Store bạn đều được hỗ trợ ghép sim miễn phí. Phí ghép sim chỉ phát sinh khi bạn mua sim ghép tại các cửa hàng khác."
+    q: "Shop có hỗ trợ ghép sim tận nơi không?",
+    a: "Có, shop có hỗ trợ ghép sim tận nơi tại Hà Nội và Đà Nẵng. Bạn có thể liên hệ qua Zalo để được hỗ trợ."
+  },
+  {
+    q: "Tôi có thể đặt hàng online và tự lắp sim ghép tại nhà không?",
+    a: "Có, quy trình lắp rất đơn giản. Chúng tôi sẽ gửi kèm hướng dẫn chi tiết hoặc hỗ trợ video call để bạn có thể tự kích hoạt chỉ trong vài phút."
   },
   {
     q: "iPhone Lock sau khi ghép sim có ổn định không?",
     a: "Tùy theo model iPhone và sim ghép mà có thể có sự khác biệt. Nhưng chúng tôi bảo đảm quá trình sử dụng bạn sẽ được hỗ trợ nếu có vấn đề phát sinh."
-  },
-  {
-    q: "Tôi có thể tự lắp sim ghép tại nhà không?",
-    a: "Có, quy trình lắp rất đơn giản. Chúng tôi sẽ gửi kèm hướng dẫn chi tiết hoặc hỗ trợ video call để bạn có thể tự kích hoạt chỉ trong vài phút."
   },
   {
     q: "Sim ghép có bị 'văng' active khi thay đổi khu vực không?",
@@ -50,11 +50,11 @@ export default function FAQ() {
 
           <div className="lg:w-2/3 space-y-4">
             {faqs.map((faq, idx) => (
-              <div 
+              <div
                 key={idx}
                 className="bg-white rounded-3xl overflow-hidden border border-gray-100 transition-all hover:border-primary/20"
               >
-                <button 
+                <button
                   className="w-full p-6 text-left flex items-center justify-between gap-4"
                   onClick={() => setOpenIdx(openIdx === idx ? null : idx)}
                 >
@@ -63,7 +63,7 @@ export default function FAQ() {
                     {openIdx === idx ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
                   </div>
                 </button>
-                
+
                 <div className={`px-6 transition-all duration-300 ease-in-out ${openIdx === idx ? "max-h-96 pb-6 opacity-100" : "max-h-0 opacity-0 overflow-hidden"}`}>
                   <p className="text-gray-500 leading-relaxed border-t border-gray-50 pt-4">
                     {faq.a}

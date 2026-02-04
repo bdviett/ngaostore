@@ -8,9 +8,9 @@ export const metadata: Metadata = {
   title: "Ngáo Store - Chuyên Sim Ghép iPhone Lock Giá Rẻ, Uy Tín",
   description: "Cung cấp các loại sim ghép mới nhất cho iPhone Lock. Hỗ trợ fix lỗi, kích hoạt iPhone Lock nhanh chóng, ổn định.",
   icons: {
-    icon: "/favicon-32x32.png",
-    shortcut: "/favicon-32x32.png",
-    apple: "/favicon-32x32.png",
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
   keywords: [
     "sim ghép iphone 6",

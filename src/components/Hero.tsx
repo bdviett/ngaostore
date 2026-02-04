@@ -24,14 +24,14 @@ export default function Hero() {
               Sim Ghép Thế Hệ Mới 2026
             </span>
           </div>
-          
+
           <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">
             Ghép Sim <span className="text-primary">iPhone Lock</span> <br />
-            Chưa Bao Giờ Dễ Thế
+            Dễ Dàng Như Cài App
           </h1>
-          
+
           <p className="text-white/60 text-lg md:text-xl mb-8 max-w-xl leading-relaxed">
-            Ghép sim iPhone Lock sóng sánh ổn định với sim ghép mới nhất từ Ngáo Store. 
+            Ghép sim iPhone Lock sóng sánh ổn định với sim ghép mới nhất từ Ngáo Store.
             Tự động kích hoạt, fix full lỗi, hỗ trợ từ iPhone 6 đến iPhone 17.
           </p>
 
@@ -66,24 +66,20 @@ export default function Hero() {
           className="relative"
         >
           <div className="relative z-10 bg-gradient-to-br from-white/10 to-white/5 p-4 rounded-[40px] border border-white/10 backdrop-blur-sm">
-            <Image src="/images/hero-banner.png" alt="Sim iPhone Lock" width={600} height={600} className="rounded-[30px] shadow-2xl" />
-            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-3xl shadow-2xl animate-bounce-slow">
-              <div className="text-secondary-dark font-black text-3xl leading-none">99%</div>
-              <div className="text-secondary/60 text-sm font-bold uppercase mt-1">Ổn định</div>
-            </div>
-            
+            <Image src="/images/hero-banner.png" alt="Sim iPhone Lock" width={800} height={800} className="rounded-[30px] shadow-2xl" />
+
             <div className="absolute -top-6 -right-6 bg-primary p-6 rounded-3xl shadow-2xl animate-pulse">
               <div className="text-white font-black text-2xl leading-none">24/7</div>
               <div className="text-white/80 text-sm font-bold uppercase mt-1">Hỗ Trợ</div>
             </div>
-          </div>
-          
+          </div >
+
           {/* Decorative shapes */}
-          <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full border-2 border-white/5 rounded-full scale-125" />
+          < div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full border-2 border-white/5 rounded-full scale-125" />
           <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full border-2 border-white/5 rounded-full scale-150" />
-        </motion.div>
-      </div>
-      
+        </motion.div >
+      </div >
+
       <style jsx global>{`
         @keyframes bounce-slow {
           0%, 100% { transform: translateY(0); }
@@ -93,6 +89,6 @@ export default function Hero() {
           animation: bounce-slow 4s ease-in-out infinite;
         }
       `}</style>
-    </section>
+    </section >
   );
 }
