@@ -26,8 +26,8 @@ export default function Hero() {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">
-            Ghép Sim <span className="text-primary">iPhone Lock</span> <br />
-            Dễ Dàng Như Cài App
+            Ghép Sim <span className="text-primary">Máy Lock</span> <br />
+            Tại Sao Lại Đơn Giản Đến Thế
           </h1>
 
           <p className="text-white/60 text-lg md:text-xl mb-8 max-w-xl leading-relaxed">

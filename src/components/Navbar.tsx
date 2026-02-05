@@ -28,6 +28,7 @@ export default function Navbar() {
     { name: "Tính năng", href: "#features" },
     { name: "Tương thích", href: "#compatibility" },
     { name: "Bảng giá", href: "#pricing" },
+    { name: "Đánh giá", href: "#reviews" },
     { name: "Hỏi đáp", href: "#faq" },
   ];
 
