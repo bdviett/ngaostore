@@ -1,11 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    // Tối ưu cho production
+    unoptimized: true,
     formats: ['image/avif', 'image/webp'],
-    // Nếu sau này bạn dùng external images, thêm domains ở đây
-    // domains: ['example.com'],
   },
+  output: 'export',
 };
 
 export default nextConfig;

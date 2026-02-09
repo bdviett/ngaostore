@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import Link from "next/link";
 
 const faqs = [
   {
@@ -43,9 +44,13 @@ export default function FAQ() {
             <p className="text-gray-500 text-lg mb-8">
               Bạn có câu hỏi khác? Liên hệ ngay với đội ngũ hỗ trợ của chúng tôi để được tư vấn miễn phí.
             </p>
-            <button className="bg-secondary text-white px-8 py-4 rounded-2xl font-bold transition-all hover:bg-secondary-dark">
-              <a target="_blank" href="http://zalo.me/0988012895">Liên Hệ Hỗ Trợ</a>
-            </button>
+            <Link
+              target="_blank"
+              href="http://zalo.me/0988012895"
+              className="bg-secondary text-white px-8 py-4 rounded-2xl font-bold transition-all hover:bg-secondary-dark"
+            >
+              Liên Hệ Hỗ Trợ
+            </Link>
           </div>
 
           <div className="lg:w-2/3 space-y-4">

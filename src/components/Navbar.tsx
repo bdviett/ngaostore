@@ -27,8 +27,8 @@ export default function Navbar() {
     { name: "Trang chủ", href: "#" },
     { name: "Tính năng", href: "#features" },
     { name: "Tương thích", href: "#compatibility" },
-    { name: "Bảng giá", href: "#pricing" },
     { name: "Đánh giá", href: "#reviews" },
+    { name: "Bảng giá", href: "#pricing" },
     { name: "Hỏi đáp", href: "#faq" },
   ];
 
@@ -46,7 +46,7 @@ export default function Navbar() {
           {/* <div className="bg-primary p-2 rounded-lg">
             <span className="text-white font-bold text-xl">N</span>
           </div> */}
-          <Image src="/android-512x512.png" alt="Ngáo Store" width={64} height={64} />
+          <Image src="/logo.png" alt="Ngáo Store Ghép Sim iPhone Lock" width={64} height={64} />
           <span className={cn(
             "font-bold text-xl tracking-tight",
             isScrolled ? "text-secondary" : "text-white"
@@ -84,9 +84,17 @@ export default function Navbar() {
             <Phone size={16} />
             Hỗ trợ ghép sim
           </Link>
-          <button className="bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-full font-semibold transition-all shadow-lg shadow-primary/20 hover:shadow-primary/40">
-            <a target="_blank" href="https://shopee.vn/ngaostore86">Mua hàng tại Shopee</a>
-          </button>
+          <Link
+            href="https://shopee.vn/ngaostore86"
+            className={cn(
+              "bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-full font-semibold transition-all shadow-lg shadow-primary/20 hover:shadow-primary/40",
+              isScrolled
+                ? "border-secondary/20 text-secondary hover:bg-primary"
+                : "border-white/20 text-white hover:bg-primary/90"
+            )}
+          >
+            Mua hàng tại Shopee
+          </Link>
         </div>
 
         {/* Mobile Toggle */}

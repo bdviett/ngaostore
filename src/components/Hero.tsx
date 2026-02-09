@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Shield, Zap, CheckCircle, ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -31,18 +32,25 @@ export default function Hero() {
           </h1>
 
           <p className="text-white/60 text-lg md:text-xl mb-8 max-w-xl leading-relaxed">
-            Ghép sim iPhone Lock sóng sánh ổn định với sim ghép mới nhất từ Ngáo Store.
-            Tự động kích hoạt, fix full lỗi, hỗ trợ từ iPhone 6 đến iPhone 17.
+          Ngáo Store – Chuyên sim ghép và các giải pháp mở khóa iPhone Lock uy tín, chuyên nghiệp tại Hà Nội & Đà Nẵng. Bảo hành rõ ràng, hỗ trợ ghép sim tận nơi nhanh chóng. <br />
+          Zalo: <a href="https://zalo.me/0988012895" className="text-primary hover:underline">0988-012-895</a>
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-10">
-            <button className="bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-2xl font-bold text-lg flex items-center justify-center gap-2 transition-all shadow-xl shadow-primary/25 group">
-              <a target="_blank" href="https://shopee.vn/ngaostore86">Mua Sim Ngay</a>
+            <Link 
+              target="_blank" 
+              href="https://shopee.vn/ngaostore86"
+              className="bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-2xl font-bold text-lg flex items-center justify-center gap-2 transition-all shadow-xl shadow-primary/25 group"
+            >
+              Mua Sim Ngay
               <ArrowRight className="group-hover:translate-x-1 transition-transform" />
-            </button>
-            <button className="bg-white/5 hover:bg-white/10 text-white border border-white/10 px-8 py-4 rounded-2xl font-bold text-lg transition-all">
-              <a href="#pricing">Xem Bảng Giá</a>
-            </button>
+            </Link>
+            <Link 
+              href="#pricing"
+              className="bg-white/5 hover:bg-white/10 text-white border border-white/10 px-8 py-4 rounded-2xl font-bold text-lg transition-all"
+            >
+              Xem Bảng Giá
+            </Link>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
@@ -66,7 +74,7 @@ export default function Hero() {
           className="relative"
         >
           <div className="relative z-10 bg-gradient-to-br from-white/10 to-white/5 p-4 rounded-[40px] border border-white/10 backdrop-blur-sm">
-            <Image src="/images/hero-banner.png" alt="Sim iPhone Lock" width={800} height={800} className="rounded-[30px] shadow-2xl" />
+            <Image src="/images/hero-banner.png" alt="Ngáo Store Ghép Sim iPhone Lock" width={800} height={800} className="rounded-[30px] shadow-2xl" />
 
             <div className="absolute -top-6 -right-6 bg-primary p-6 rounded-3xl shadow-2xl animate-pulse">
               <div className="text-white font-black text-2xl leading-none">24/7</div>

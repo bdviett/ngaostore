@@ -7,21 +7,26 @@ import reviewsData from "@/data/reviews.json";
 const MAX_COMMENT_LENGTH = 100;
 
 export default function Reviews() {
-  const [showAll, setShowAll] = useState(false);
   const [expandedComments, setExpandedComments] = useState<Record<number, boolean>>({});
-  const [displayLimit, setDisplayLimit] = useState(9);
+  const [displayLimit, setDisplayLimit] = useState(6);
 
   useEffect(() => {
     // Determine initial limit based on screen size
     const handleResize = () => {
-      if (window.innerWidth < 1024) { // Mobile/Tablet
-        setDisplayLimit(6);
-      } else {
-        setDisplayLimit(9);
-      }
+      const newLimit = window.innerWidth < 1024 ? 4 : 6;
+      setDisplayLimit((prev) => {
+        // Only update on resize if limit is still at initial values (4 or 6)
+        // This prevents resetting if user has already clicked "Xem thêm"
+        if (prev === 4 || prev === 6) {
+          return newLimit;
+        }
+        return prev;
+      });
     };
 
-    handleResize();
+    const newLimit = window.innerWidth < 1024 ? 4 : 6;
+    setDisplayLimit(newLimit);
+
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -33,7 +38,13 @@ export default function Reviews() {
     }));
   };
 
-  const visibleReviews = showAll ? reviewsData : reviewsData.slice(0, displayLimit);
+  const loadMore = () => {
+    setDisplayLimit((prev) => Math.min(prev + 6, reviewsData.length));
+  };
+
+  const visibleReviews = reviewsData.slice(0, displayLimit);
+  const hasMore = displayLimit < reviewsData.length;
+  const showAll = displayLimit >= reviewsData.length;
 
   return (
     <section id="reviews" className="py-16 md:py-24 bg-white">
@@ -126,9 +137,9 @@ export default function Reviews() {
         </div>
 
         <div className="mt-12 md:mt-16 flex flex-col items-center gap-4 md:gap-6">
-          {!showAll && reviewsData.length > displayLimit && (
+          {hasMore && (
             <button
-              onClick={() => setShowAll(true)}
+              onClick={loadMore}
               className="w-full md:w-auto group flex items-center justify-center gap-2 px-8 py-4 border-2 border-primary text-primary font-bold rounded-2xl hover:bg-primary hover:text-white transition-all active:scale-95"
             >
               <Plus className="w-5 h-5 group-hover:rotate-90 transition-transform" />
@@ -136,15 +147,17 @@ export default function Reviews() {
             </button>
           )}
 
-          {showAll && <a
-            href="https://shopee.vn/ngaostore86"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full md:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white font-bold rounded-2xl hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 hover:scale-105 active:scale-95"
-          >
-            <span>Xem tất cả trên Shopee</span>
-            <ExternalLink className="w-5 h-5" />
-          </a>}
+          {showAll && (
+            <a
+              href="https://shopee.vn/ngaostore86"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full md:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white font-bold rounded-2xl hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 hover:scale-105 active:scale-95"
+            >
+              <span>Xem tất cả trên Shopee</span>
+              <ExternalLink className="w-5 h-5" />
+            </a>
+          )}
         </div>
       </div>
     </section>
