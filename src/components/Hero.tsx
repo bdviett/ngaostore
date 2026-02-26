@@ -27,12 +27,12 @@ export default function Hero() {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">
-            Ghép Sim <span className="text-primary">Máy Lock</span> <br />
-            Tại Sao Lại Đơn Giản Đến Thế
+            Ghép Sim <span className="text-primary">iPhone Lock</span> <br />
+            Tại Sao Lại Đơn Giản Đến Vậy?
           </h1>
 
           <p className="text-white/60 text-lg md:text-xl mb-8 max-w-xl leading-relaxed">
-          Ngáo Store – Chuyên sim ghép và các giải pháp mở khóa iPhone Lock uy tín, chuyên nghiệp tại Hà Nội & Đà Nẵng. Bảo hành rõ ràng, hỗ trợ ghép sim tận nơi nhanh chóng. <br />
+          Ngáo Store – Chuyên sim ghép và các giải pháp mở khóa iPhone Lock uy tín, chuyên nghiệp tại Hà Nội & Đà Nẵng. Hỗ trợ ghép sim tận nơi nhanh chóng. <br />
           Zalo: <a href="https://zalo.me/0988012895" className="text-primary hover:underline">0988-012-895</a>
           </p>
 
@@ -43,11 +43,10 @@ export default function Hero() {
               className="bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-2xl font-bold text-lg flex items-center justify-center gap-2 transition-all shadow-xl shadow-primary/25 group"
             >
               Mua Sim Ngay
-              <ArrowRight className="group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link 
               href="#pricing"
-              className="bg-white/5 hover:bg-white/10 text-white border border-white/10 px-8 py-4 rounded-2xl font-bold text-lg transition-all"
+              className="bg-white/5 hover:bg-white/10 text-white border border-white/10 px-8 py-4 rounded-2xl font-bold text-lg flex items-center justify-center transition-all"
             >
               Xem Bảng Giá
             </Link>

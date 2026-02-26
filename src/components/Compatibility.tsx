@@ -12,9 +12,9 @@ const models = [
 
 export default function Compatibility() {
   return (
-    <section id="compatibility" className="py-24 bg-gray-50">
+    <section id="compatibility" className="py-24 bg-secondary-dark">
       <div className="container mx-auto px-4">
-        <div className="bg-secondary-dark rounded-[48px] overflow-hidden p-8 md:p-16 relative">
+        <div className="bg-white/5 border border-white/10 rounded-[48px] overflow-hidden p-8 md:p-16 relative">
           {/* Decorative element */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2" />
           

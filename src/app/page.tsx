@@ -1,6 +1,8 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
+import ProductList from "@/components/ProductList";
+import Blog from "@/components/Blog";
 import Compatibility from "@/components/Compatibility";
 import Pricing from "@/components/Pricing";
 import Reviews from "@/components/Reviews";
@@ -14,6 +16,8 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Features />
+      <ProductList />
+      <Blog />
       <Compatibility />
       <Reviews />
       <Pricing />

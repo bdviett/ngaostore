@@ -48,9 +48,9 @@ export default function Pricing() {
     <section id="pricing" className="py-24 bg-secondary-dark">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-6">Bảng Giá Hợp Lý</h2>
+          <h2 className="text-4xl md:text-5xl font-black text-white mb-6">Bảng Giá Dịch Vụ</h2>
           <p className="text-white/60 text-lg">
-            Chúng tôi cam kết mang đến chất lượng tốt nhất với mức giá cạnh tranh nhất thị trường.
+            Chúng tôi cam kết mang đến chất lượng tốt nhất với mức giá cạnh tranh nhất. Dịch vụ hỗ trợ ghép sim tận nơi trong nội thành Hà Nội và TP Đà Nẵng.
           </p>
         </div>
 

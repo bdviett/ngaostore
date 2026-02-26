@@ -25,10 +25,10 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Trang chủ", href: "#" },
-    { name: "Tính năng", href: "#features" },
-    { name: "Tương thích", href: "#compatibility" },
+    { name: "Sản phẩm", href: "#products" },
+    { name: "Bài viết", href: "#blog" },
     { name: "Đánh giá", href: "#reviews" },
-    { name: "Bảng giá", href: "#pricing" },
+    { name: "Dịch vụ", href: "#pricing" },
     { name: "Hỏi đáp", href: "#faq" },
   ];
 
