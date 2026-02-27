@@ -4,7 +4,7 @@ import Features from "@/components/Features";
 import ProductList from "@/components/ProductList";
 import Blog from "@/components/Blog";
 import Compatibility from "@/components/Compatibility";
-import Pricing from "@/components/Pricing";
+import Service from "@/components/Service";
 import Reviews from "@/components/Reviews";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
@@ -18,9 +18,9 @@ export default function Home() {
       <Features />
       <ProductList />
       <Blog />
-      <Compatibility />
+      <Service />
       <Reviews />
-      <Pricing />
+      <Compatibility />
       <FAQ />
       <Footer />
       <ContactPinned />

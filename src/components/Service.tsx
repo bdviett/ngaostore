@@ -3,47 +3,47 @@ import { Check, ArrowRight } from "lucide-react";
 
 const plans = [
   {
-    name: "Cơ Bản",
-    price: "99.000",
-    desc: "Dành máy đời cũ 6-X, hỗ trợ fix lỗi cuộc gọi, 4G/LTE ...",
+    name: "Ghép Sim Tận Nơi",
+    price: "Từ 200.000",
+    desc: "Hỗ trợ ghép sim tận nơi nội thành Hà Nội và TP Đà Nẵng. Nhanh chóng, tiện lợi, an toàn.",
     features: [
-      "Sim ghép 1 mảnh",
-      "Fix lỗi +84 & Danh bạ",
-      "Hỗ trợ 4G LTE",
-      "Bảo hành 3 tháng",
-      "Tự động kích hoạt"
+      "Sim ghép 1 mảnh, 2 mảnh",
+      "Hỏa tốc 30p-1h",
+      "Bảo hành 3 tháng, lỗi đổi mới",
+      "Tự động kích hoạt, không cần cấu hình",
+      "Hỗ trợ 4G/5G ổn định"
     ],
     highlight: false
   },
   {
-    name: "Phổ Biến",
-    price: "120.000",
-    desc: "Lựa chọn tốt nhất cho đa số anh em, hỗ trợ Xs-16ProMax, ổn định lâu dài.",
+    name: "Mua Sim Ghép",
+    price: "Từ 99.000",
+    desc: "Hỗ trợ máy từ 6-16ProMax, ghép sim sử dụng ổn định, bảo hành 3 tháng.",
     features: [
-      "Sim ghép 2 mảnh",
-      "Fix lỗi +84 & Danh bạ",
-      "Hỗ trợ 4G LTE",
+      "Sim ghép 1 mảnh, 2 mảnh",
+      "Ghép chế độ EID, TMSI",
+      "Hỗ trợ 4G/5G ổn định",
       "Bảo hành 3 tháng",
       "Tự động kích hoạt"
     ],
     highlight: true
   },
   {
-    name: "Chuyên Nghiệp",
-    price: "200.000",
-    desc: "Dịch vụ hỗ trợ ghép sim tận nơi trong nội thành Hà Nội và TP Đà Nẵng.",
+    name: "Mở khóa quốc tế",
+    price: "Từ 200.000",
+    desc: "Mở khóa iPhone Lock thành máy Quốc Tế, chuyên nghiệp, an toàn, nhanh chóng. Bảo hành vĩnh viễn, hỗ trợ 24/7.",
     features: [
-      "Sim ghép 2 mảnh",
-      "Hỗ trợ 6-16Promax",
-      "Fix lỗi full",
-      "Bảo hành 3 tháng",
-      "Tự động kích hoạt"
+      "Mở khóa Lock thành iPhone Quốc Tế",
+      "Hoạt động ổn định, không phải dùng sim ghép",
+      "Bảo hành vĩnh viễn, hỗ trợ 24/7",
+      "Hỗ trợ mọi nhà mạng tại Việt Nam",
+      "Nhanh chóng, uy tín"
     ],
     highlight: false
   }
 ];
 
-export default function Pricing() {
+export default function Service() {
   return (
     <section id="pricing" className="py-24 bg-secondary-dark">
       <div className="container mx-auto px-4">

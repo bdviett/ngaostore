@@ -4,72 +4,124 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin", "vietnamese"] });
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://ngao.store";
+
 export const metadata: Metadata = {
-  title: "Ngáo Store - Chuyên Sim Ghép iPhone Lock Giá Rẻ, Uy Tín",
-  description: "Cung cấp các loại sim ghép mới nhất cho iPhone Lock. Hỗ trợ fix lỗi, kích hoạt iPhone Lock nhanh chóng, ổn định.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Ghép Sim & Mở Khóa iPhone Lock Giá Rẻ Tại Hà Nội, Đà Nẵng | Ngáo Store | ngao.store",
+    template: "%s | Ngáo Store",
+  },
+  description:
+    "Sim ghép iPhone Lock chính hãng. Mở khóa iPhone Lock, ghép sim tận nơi Hà Nội & Đà Nẵng. Ghép sim tận nơi, mở khóa quốc tế. Bảo hành 3 tháng. Liên hệ Zalo: 0988 012 895.",
+  keywords: [
+    "sim ghép iphone lock",
+    "sim ghép iphone giá rẻ",
+    "mở khóa iphone lock",
+    "ghép sim tận nơi",
+    "ghép sim tại nhà hà nội",
+    "sim ghép tại hà nội",
+    "sim ghép cầu giấy",
+    "sim ghép cầu giấy hà nội",
+    "sim ghép hoàng mai",
+    "sim ghép long biên",
+    "sim ghép thanh xuân",
+    "sim ghép đống đa",
+    "sim ghép bắc từ liêm",
+    "sim ghép nam từ liêm",
+    "sim ghép thanh xuân",
+    "sim ghép hoàng mai",
+    "sim ghép long biên",
+    "sim ghép thanh xuân",
+    "sim ghép đống đa",
+    "sim ghép bắc từ liêm",
+    "sim ghép tại đà nẵng",
+    "ghép sim đà nẵng",
+    "sim ghép bison",
+    "sim ghép heicard",
+    "sim ghép qpe",
+    "sim ghép tmsi",
+    "sim ghép eid",
+    "fix lỗi iphone lock",
+    "fix lỗi danh bạ iphone",
+    "kích hoạt iphone lock",
+    "iphone lock dùng được sim việt",
+    "sim ghép iphone 16",
+    "sim ghép iphone 15",
+    "sim ghép iphone 14",
+    "sim ghép iphone 13",
+    "sim ghép iphone 12",
+    "sim ghép iphone 11",
+    "sim ghép iphone x",
+    "ngao store",
+    "sim ghép hà nội",
+    "sim ghép đà nẵng",
+    "mở khóa iphone lock tại nhà",
+    "ghép sim iphone 24/7",
+  ],
   icons: {
     icon: "/favicon.png",
     shortcut: "/favicon.png",
     apple: "/favicon.png",
   },
-  keywords: [
-    "sim ghép iphone 6",
-    "sim ghép iphone 7",
-    "sim ghép iphone 8",
-    "sim ghép iphone 9",
-    "sim ghép iphone x",
-    "sim ghép iphone xs",
-    "sim ghép iphone xs max",
-    "sim ghép iphone xr",
-    "sim ghép iphone xr max",
-    "sim ghép iphone 11",
-    "sim ghép iphone 11 pro",
-    "sim ghép iphone 11 pro max",
-    "sim ghép iphone 12",
-    "sim ghép iphone 12 pro",
-    "sim ghép iphone 12 pro max",
-    "sim ghép iphone 13",
-    "sim ghép iphone 13 pro",
-    "sim ghép iphone 13 pro max",
-    "sim ghép iphone 14",
-    "sim ghép iphone 14 pro",
-    "sim ghép iphone 14 pro max",
-    "sim ghép iphone 15",
-    "sim ghép iphone 15 pro",
-    "sim ghép iphone 15 pro max",
-    "sim ghép iphone 16",
-    "sim ghép iphone 16 pro",
-    "sim ghép iphone 16 pro max",
-    "sim ghép iphone 17",
-    "sim ghép iphone 17 pro",
-    "sim ghép iphone 17 pro max",
-    "sim ghép eid",
-    "sim ghép qpe",
-    "sim ghép tmsi",
-    "iphone lock",
-    "fix lỗi iphone lock",
-    "sim ghép giá rẻ",
-    "ngao store",
-    "sim ghép pro new",
-    "sim ghép bison",
-    "kích hoạt iphone lock",
-    "sim ghép tự động",
-    "sim ghép tphcm",
-    "sim ghép hà nội",
-    "sim ghép mới nhất",
-    "ghép sim iphone",
-  ],
-  authors: [{ name: "Ngáo Store" }],
+  authors: [{ name: "Ngáo Store", url: SITE_URL }],
+  creator: "Ngáo Store",
+  publisher: "Ngáo Store",
   openGraph: {
-    title: "Ngáo Store - Chuyên Sim Ghép iPhone Lock Giá Rẻ, Uy Tín",
-    description: "Cung cấp các loại sim ghép mới nhất cho iPhone Lock. Hỗ trợ fix lỗi, kích hoạt iPhone Lock nhanh chóng, ổn định.",
     type: "website",
     locale: "vi_VN",
+    url: SITE_URL,
+    siteName: "Ngáo Store",
+    title: "Sim Ghép iPhone Lock Giá Rẻ Tại Hà Nội, Đà Nẵng | Ngáo Store | ngao.store",
+    description:
+      "Sim ghép iPhone Lock chính hãng. Ghép sim tận nơi Hà Nội & Đà Nẵng. Fix lỗi danh bạ, 4G/5G ổn định. Bảo hành 3 tháng.",
+    images: [{ url: "/favicon.png", width: 512, height: 512, alt: "Ngáo Store - Sim Ghép iPhone Lock" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sim Ghép iPhone Lock Giá Rẻ Tại Hà Nội, Đà Nẵng | Ngáo Store | ngao.store",
+    description: "Sim ghép iPhone Lock, mở khóa iPhone. Ghép sim tận nơi Hà Nội & Đà Nẵng. Bảo hành 3 tháng.",
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
+  alternates: {
+    canonical: SITE_URL,
+  },
+  category: "technology",
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Ngáo Store",
+  description: "Chuyên sim ghép iPhone Lock, mở khóa iPhone Lock. Ghép sim tận nơi Hà Nội & Đà Nẵng. Sim ghép Bison, Heicard chính hãng.",
+  url: SITE_URL,
+  telephone: "+84988012895",
+  email: "ngaostore86@gmail.com",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Số 10 ngõ 28B Hạ Đình, Thanh Xuân",
+    addressLocality: "Hà Nội",
+    addressCountry: "VN",
+  },
+  areaServed: [{ "@type": "City", name: "Hà Nội" }, { "@type": "City", name: "Đà Nẵng" }],
+  priceRange: "99.000đ - 300.000đ",
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    opens: "00:00",
+    closes: "23:59",
+  },
+  sameAs: [
+    "https://www.facebook.com/ngaostore86",
+    "https://www.instagram.com/ngaostore.86",
+  ],
 };
 
 export default function RootLayout({
@@ -79,7 +131,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        {children}
+      </body>
     </html>
   );
 }

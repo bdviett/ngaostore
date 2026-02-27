@@ -44,8 +44,8 @@ export default function ProductList() {
           </h3>
         </div>
 
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-10">
-          <div className="relative flex-1 max-w-md">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 mb-10">
+          <div className="relative w-full lg:max-w-md">
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-white/50" />
             <input
               type="search"
