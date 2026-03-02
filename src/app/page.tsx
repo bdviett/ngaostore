@@ -10,8 +10,6 @@ import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import ContactPinned from "@/components/ContactPinned";
 
-export const dynamic = "force-dynamic";
-
 export default function Home() {
   return (
     <main className="min-h-screen">

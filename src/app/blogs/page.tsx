@@ -5,8 +5,6 @@ import ContactPinned from "@/components/ContactPinned";
 import type { Metadata } from "next";
 import blogData from "@/data/blog.json";
 
-export const dynamic = "force-dynamic";
-
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://ngao.store";
 
 export const metadata: Metadata = {

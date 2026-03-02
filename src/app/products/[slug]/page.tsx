@@ -8,7 +8,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Phone, ShieldCheck, Truck } from "lucide-react";
 
-export const dynamic = "force-dynamic";
+export function generateStaticParams() {
+  return products.map((p) => ({ slug: getProductSlug(p) }));
+}
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://ngao.store";
 const ZALO_URL = "https://zalo.me/0988012895";

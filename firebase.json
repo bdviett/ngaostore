@@ -7,10 +7,10 @@
       "**/node_modules/**"
     ],
     "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
+      { "source": "/products", "destination": "/products.html" },
+      { "source": "/blogs", "destination": "/blogs.html" },
+      { "source": "/products/:slug", "destination": "/products/:slug.html" },
+      { "source": "**", "destination": "/index.html" }
     ]
   }
 }
