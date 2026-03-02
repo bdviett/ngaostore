@@ -1,5 +1,6 @@
 import React from "react";
 import { Check, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const plans = [
   {
@@ -13,7 +14,8 @@ const plans = [
       "Tự động kích hoạt, không cần cấu hình",
       "Hỗ trợ 4G/5G ổn định"
     ],
-    highlight: false
+    highlight: false,
+    link: "http://zalo.me/0988012895"
   },
   {
     name: "Mua Sim Ghép",
@@ -26,7 +28,8 @@ const plans = [
       "Bảo hành 3 tháng",
       "Tự động kích hoạt"
     ],
-    highlight: true
+    highlight: true,
+    link: "https://shopee.vn/ngaostore86"
   },
   {
     name: "Mở khóa quốc tế",
@@ -39,13 +42,14 @@ const plans = [
       "Hỗ trợ mọi nhà mạng tại Việt Nam",
       "Nhanh chóng, uy tín"
     ],
-    highlight: false
+    highlight: false,
+    link: "http://zalo.me/0988012895"
   }
 ];
 
 export default function Service() {
   return (
-    <section id="pricing" className="py-24 bg-secondary-dark">
+    <section id="services" className="py-24 bg-secondary-dark">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-4xl md:text-5xl font-black text-white mb-6">Bảng Giá Dịch Vụ</h2>
@@ -97,13 +101,13 @@ export default function Service() {
                 ))}
               </div>
 
-              <button className={`w-full py-4 rounded-2xl font-bold text-lg flex items-center justify-center gap-2 transition-all ${plan.highlight
+              <Link className={`w-full py-4 rounded-2xl font-bold text-lg flex items-center justify-center gap-2 transition-all ${plan.highlight
                 ? "bg-primary hover:bg-primary-dark text-white shadow-lg shadow-primary/30"
                 : "bg-white/10 hover:bg-white/20 text-white border border-white/10"
-                }`}>
+                }`} href={plan.link} target="_blank">
                 Chọn Gói Này
                 <ArrowRight size={20} />
-              </button>
+              </Link>
             </div>
           ))}
         </div>

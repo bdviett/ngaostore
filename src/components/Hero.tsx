@@ -27,8 +27,8 @@ export default function Hero() {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">
-            Ghép Sim <span className="text-primary">iPhone Lock</span> <br />
-            Tại Sao Lại Đơn Giản Đến Vậy?
+            Unlock & Ghép Sim <span className="text-primary">iPhone Lock</span> <br />
+            Tại <span className="text-primary">Ngáo Store</span>
           </h1>
 
           <p className="text-white/60 text-lg md:text-xl mb-8 max-w-xl leading-relaxed">
@@ -39,16 +39,16 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 mb-10">
             <Link 
               target="_blank" 
-              href="https://shopee.vn/ngaostore86"
+              href="http://zalo.me/0988012895"
               className="bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-2xl font-bold text-lg flex items-center justify-center gap-2 transition-all shadow-xl shadow-primary/25 group"
             >
-              Mua Sim Ngay
+              Liên Hệ Ngay
             </Link>
             <Link 
-              href="#pricing"
+              href="/products"
               className="bg-white/5 hover:bg-white/10 text-white border border-white/10 px-8 py-4 rounded-2xl font-bold text-lg flex items-center justify-center transition-all"
             >
-              Xem Bảng Giá
+              Xem Sản Phẩm
             </Link>
           </div>
 

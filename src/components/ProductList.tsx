@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useMemo, useState } from "react";
-import { Search } from "lucide-react";
+import Link from "next/link";
+import { Search, ArrowRight } from "lucide-react";
 import ProductCard from "./ProductCard";
 import Slideshow from "./Slideshow";
 import { products } from "@/data/mock";
@@ -16,7 +17,12 @@ const CATEGORIES: { value: ProductCategory; label: string }[] = [
   { value: "phu-kien-khac", label: "Phụ Kiện Khác" },
 ];
 
-export default function ProductList() {
+interface ProductListProps {
+  showViewAll?: boolean;
+  useSlideshow?: boolean;
+}
+
+export default function ProductList({ showViewAll = false, useSlideshow = true }: ProductListProps) {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState<ProductCategory>("all");
 
@@ -27,7 +33,7 @@ export default function ProductList() {
       const matchSearch =
         !search.trim() ||
         p.name.toLowerCase().includes(search.toLowerCase().trim()) ||
-        p.description.toLowerCase().includes(search.toLowerCase().trim());
+        p.shortDescription.toLowerCase().includes(search.toLowerCase().trim());
       return matchCategory && matchSearch;
     });
   }, [search, category]);
@@ -36,12 +42,21 @@ export default function ProductList() {
     <section id="products" className="py-24 bg-secondary-dark">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-primary font-bold tracking-widest uppercase text-sm mb-4">
+          <p className="text-primary font-bold tracking-widest uppercase text-sm mb-4">
             Sản phẩm
-          </h2>
-          <h3 className="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
-            Sản phẩm nổi bật
-          </h3>
+          </p>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
+            Danh Sách Sản Phẩm Bán Chạy Tại Ngáo Store
+          </h1>
+          {showViewAll && (
+            <Link
+              href="/products"
+              className="inline-flex items-center gap-2 text-white/80 hover:text-primary font-semibold transition-colors"
+            >
+              Xem tất cả sản phẩm
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+          )}
         </div>
 
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 mb-10">
@@ -73,13 +88,28 @@ export default function ProductList() {
           </div>
         </div>
 
-        <Slideshow
-          items={filtered}
-          renderItem={(product) => <ProductCard product={product} />}
-          keyExtractor={(p) => p.id}
-          variant="dark"
-          emptyMessage="Không tìm thấy sản phẩm phù hợp."
-        />
+        {useSlideshow ? (
+          <Slideshow
+            items={filtered}
+            renderItem={(product) => <ProductCard product={product} />}
+            keyExtractor={(p) => p.id}
+            variant="dark"
+            emptyMessage="Không tìm thấy sản phẩm phù hợp."
+          />
+        ) : (
+          <>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+              {filtered.map((product) => (
+                <ProductCard key={product.id} product={product} />
+              ))}
+            </div>
+            {filtered.length === 0 && (
+              <p className="text-center text-white/60 py-12">
+                Không tìm thấy sản phẩm phù hợp.
+              </p>
+            )}
+          </>
+        )}
       </div>
     </section>
   );

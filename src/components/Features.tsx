@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import {
   Wifi,
@@ -9,6 +11,7 @@ import {
   Globe,
   LifeBuoy
 } from "lucide-react";
+import Slideshow from "./Slideshow";
 
 const features = [
   {
@@ -77,7 +80,23 @@ export default function Features() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="block lg:hidden">
+          <Slideshow
+            items={features}
+            renderItem={(feature) => (
+              <div className="p-8 rounded-[32px] border border-gray-100 hover:border-primary/20 hover:shadow-2xl hover:shadow-primary/5 transition-all group">
+                <div className={`${feature.color} w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform`}>
+                  {feature.icon}
+                </div>
+                <h4 className="text-xl font-bold text-secondary mb-3">{feature.title}</h4>
+                <p className="text-gray-500 leading-relaxed">{feature.desc}</p>
+              </div>
+            )}
+            keyExtractor={(f) => f.title}
+            variant="light"
+          />
+        </div>
+        <div className="hidden lg:grid lg:grid-cols-4 gap-8">
           {features.map((feature, idx) => (
             <div
               key={idx}

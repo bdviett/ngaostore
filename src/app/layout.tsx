@@ -94,9 +94,12 @@ export const metadata: Metadata = {
     canonical: SITE_URL,
   },
   category: "technology",
+  ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION && {
+    verification: { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION },
+  }),
 };
 
-const jsonLd = {
+const jsonLdLocalBusiness = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Ngáo Store",
@@ -124,6 +127,24 @@ const jsonLd = {
   ],
 };
 
+const jsonLdWebSite = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Ngáo Store",
+  url: SITE_URL,
+  description: "Sim ghép iPhone Lock, mở khóa iPhone. Ghép sim tận nơi Hà Nội & Đà Nẵng.",
+  publisher: {
+    "@type": "Organization",
+    name: "Ngáo Store",
+    url: SITE_URL,
+    logo: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}/logo.png`,
+    },
+  },
+  inLanguage: "vi-VN",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -134,7 +155,11 @@ export default function RootLayout({
       <body className={inter.className}>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdLocalBusiness) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdWebSite) }}
         />
         {children}
       </body>
