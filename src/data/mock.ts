@@ -44,7 +44,10 @@ export interface BlogPost {
   id: string;
   title: string;
   thumbnail: string;
-  videoUrl: string;
+  /** Link video ngoài (TikTok, YouTube...) - dùng khi không có slug */
+  videoUrl?: string;
+  /** Slug trang nội bộ - khi có thì link tới /{slug} thay vì videoUrl */
+  slug?: string;
   excerpt?: string;
 }
 

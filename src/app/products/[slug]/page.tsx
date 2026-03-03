@@ -121,7 +121,7 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
               </div>
 
               <div className="mt-6 p-6 rounded-2xl bg-primary/5 border-2 border-primary/20 shadow-sm">
-                <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+                <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6">
                   <a
                     href={ZALO_URL}
                     target="_blank"
@@ -131,13 +131,13 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
                     <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/15 text-primary">
                       <Phone size={20} />
                     </span>
-                    <span>Zalo 0988 012 895</span>
+                    <span>Hỗ trợ ghép miễn phí</span>
                   </a>
                   <div className="flex items-center gap-3 text-secondary">
                     <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/15 text-primary">
                       <ShieldCheck size={20} />
                     </span>
-                    <span>Hỗ trợ 24/7</span>
+                    <span>Bảo hành 3 tháng</span>
                   </div>
                   <div className="flex items-center gap-3 text-secondary">
                     <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/15 text-primary">

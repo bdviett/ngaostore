@@ -20,9 +20,11 @@ const CATEGORIES: { value: ProductCategory; label: string }[] = [
 interface ProductListProps {
   showViewAll?: boolean;
   useSlideshow?: boolean;
+  /** Dùng H2 thay vì H1 khi component nằm trong trang có H1 riêng (tránh nhiều H1 trên 1 trang) */
+  headingLevel?: "h1" | "h2";
 }
 
-export default function ProductList({ showViewAll = false, useSlideshow = true }: ProductListProps) {
+export default function ProductList({ showViewAll = false, useSlideshow = true, headingLevel = "h1" }: ProductListProps) {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState<ProductCategory>("all");
 
@@ -45,9 +47,15 @@ export default function ProductList({ showViewAll = false, useSlideshow = true }
           <p className="text-primary font-bold tracking-widest uppercase text-sm mb-4">
             Sản phẩm
           </p>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
-            Danh Sách Sản Phẩm Bán Chạy Tại Ngáo Store
-          </h1>
+          {headingLevel === "h2" ? (
+            <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
+              Danh Sách Sim Ghép & Sản Phẩm Bán Chạy
+            </h2>
+          ) : (
+            <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
+              Danh Sách Sản Phẩm Bán Chạy Tại Ngáo Store
+            </h1>
+          )}
           {showViewAll && (
             <Link
               href="/products"

@@ -22,7 +22,7 @@ const blogSchema = {
   url: `${SITE_URL}/blogs`,
   numberOfItems: blogData.length,
   itemListElement: blogData.map(
-    (p: { id: string; title: string; excerpt?: string; thumbnail: string; videoUrl: string }, i: number) => ({
+    (p: { id: string; title: string; excerpt?: string; thumbnail: string; videoUrl?: string; slug?: string }, i: number) => ({
       "@type": "ListItem",
       position: i + 1,
       item: {
@@ -30,7 +30,7 @@ const blogSchema = {
         name: p.title,
         description: p.excerpt || p.title,
         image: `${SITE_URL}${p.thumbnail}`,
-        url: p.videoUrl,
+        url: p.slug ? `${SITE_URL}/blogs/${p.slug}` : (p.videoUrl || `${SITE_URL}/blogs`),
       },
     })
   ),

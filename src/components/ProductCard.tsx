@@ -38,7 +38,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           href={`/products/${slug}`}
           className="flex-1 py-4 rounded-2xl font-bold text-sm sm:text-lg text-center border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all"
         >
-          Xem chi tiết
+          Chi tiết
         </Link>
         <Link
           href={ZALO_URL}
@@ -46,7 +46,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           rel="noopener noreferrer"
           className="flex-1 py-4 rounded-2xl font-bold text-sm sm:text-lg text-center bg-primary hover:bg-primary-dark text-white shadow-lg shadow-primary/25 transition-all"
         >
-          Tư vấn Zalo
+          Tư vấn
         </Link>
       </div>
     </div>

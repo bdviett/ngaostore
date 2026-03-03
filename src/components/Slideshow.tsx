@@ -122,7 +122,7 @@ export default function Slideshow<T>({
       </div>
 
       {totalSlides > 1 && (
-        <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 mt-6 sm:mt-10 px-2">
+        <div className="flex flex-nowrap items-center justify-center gap-2 sm:gap-4 mt-6 sm:mt-10 px-2">
           <button
             type="button"
             onClick={goPrev}
@@ -133,23 +133,34 @@ export default function Slideshow<T>({
             <ChevronLeft className="w-5 h-5 shrink-0" />
             <span className="hidden sm:inline">Trước</span>
           </button>
-          <div className="flex items-center justify-center gap-1.5 flex-wrap py-1">
-            {Array.from({ length: totalSlides }, (_, i) => (
-              <button
-                key={i}
-                type="button"
-                onClick={() => setSlideIndex(i)}
-                className={`min-w-[0.5rem] w-2 h-2 sm:min-w-[2rem] sm:h-2 rounded-full shrink-0 transition-all ${
-                  clampedIndex === i
-                    ? "bg-primary scale-125"
-                    : isDark
-                      ? "bg-white/30 hover:bg-white/50"
-                      : "bg-gray-200 hover:bg-gray-300"
-                }`}
-                aria-label={`Slide ${i + 1}`}
-              />
-            ))}
-          </div>
+          {/* Nhiều slide (>6): hiển thị số thay vì dots để tránh tràn trên mobile */}
+          {totalSlides > 6 ? (
+            <div
+              className={`flex-shrink-0 min-w-[3.5rem] text-center text-sm font-bold tabular-nums ${
+                isDark ? "text-white/90" : "text-secondary"
+              }`}
+            >
+              {clampedIndex + 1}/{totalSlides}
+            </div>
+          ) : (
+            <div className="flex items-center justify-center gap-1.5 flex-nowrap py-1 overflow-x-auto scrollbar-hide max-w-[min(180px,70vw)] sm:max-w-none sm:overflow-visible">
+              {Array.from({ length: totalSlides }, (_, i) => (
+                <button
+                  key={i}
+                  type="button"
+                  onClick={() => setSlideIndex(i)}
+                  className={`min-w-[0.5rem] w-2 h-2 sm:min-w-[2rem] sm:h-2 rounded-full shrink-0 transition-all ${
+                    clampedIndex === i
+                      ? "bg-primary scale-125"
+                      : isDark
+                        ? "bg-white/30 hover:bg-white/50"
+                        : "bg-gray-200 hover:bg-gray-300"
+                  }`}
+                  aria-label={`Slide ${i + 1}`}
+                />
+              ))}
+            </div>
+          )}
           <button
             type="button"
             onClick={goNext}
