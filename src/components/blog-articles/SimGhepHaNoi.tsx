@@ -20,10 +20,10 @@ export default function SimGhepHaNoi() {
             </span>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6 max-w-4xl">
-            Sim Ghép Hà Nội & Mở Khóa iPhone Lock Chuyên Nghiệp
+            Sim Ghép Tại Hà Nội & Mở Khóa iPhone Lock Chuyên Nghiệp
           </h1>
           <p className="text-white/70 text-lg md:text-xl mb-8 max-w-2xl leading-relaxed">
-            Ngáo Store – Địa chỉ <strong>sim ghép hà nội</strong> uy tín. Chuyên <strong>ghép sim iPhone Lock hà nội</strong> và <strong>mở khóa iPhone Lock hà nội</strong> tận nơi. Thanh Xuân, Cầu Giấy, Hoàng Mai, Long Biên. Bảo hành 3 tháng, hỗ trợ 24/7.
+            Ngáo Store – Địa chỉ <strong>sim ghép ở Hà Nội</strong> uy tín. Chuyên <strong>ghép sim iPhone Lock ở Hà Nội</strong> và <strong>mở khóa iPhone Lock ở Hà Nội</strong> tận nơi. Thanh Xuân, Cầu Giấy, Hoàng Mai, Long Biên. Bảo hành 3 tháng, hỗ trợ 24/7.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
@@ -61,32 +61,32 @@ export default function SimGhepHaNoi() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-8">
-            Sim Ghép Hà Nội – Dịch Vụ Uy Tín Tại Ngáo Store
+            Sim Ghép Tại Hà Nội – Dịch Vụ Uy Tín Tại Ngáo Store
           </h2>
           <div className="prose prose-lg max-w-none text-secondary/80 space-y-6">
             <p>
-              <strong>Sim ghép hà nội</strong> là nhu cầu phổ biến của người dùng iPhone Lock. Tại Ngáo Store, chúng tôi cung cấp dịch vụ <strong>ghép sim iPhone Lock hà nội</strong> chuyên nghiệp với sim ghép Bison, Heicard chính hãng. Khách hàng tại các quận Thanh Xuân, Cầu Giấy, Hoàng Mai, Long Biên, Đống Đa có thể đến trực tiếp hoặc đặt lịch ghép sim tận nơi.
+              <strong>Ghép sim</strong> là nhu cầu phổ biến của người dùng iPhone Lock. Tại Ngáo Store, chúng tôi cung cấp dịch vụ <strong>ghép sim iPhone Lock ở Hà Nội</strong> chuyên nghiệp với sim ghép Bison, Heicard chính hãng. Khách hàng tại các quận Thanh Xuân, Cầu Giấy, Hoàng Mai, Long Biên, Đống Đa có thể đến trực tiếp hoặc đặt lịch ghép sim tận nơi.
             </p>
             <p>
-              Ngoài dịch vụ sim ghép, Ngáo Store còn là địa chỉ <strong>mở khóa iPhone Lock hà nội</strong> uy tín. Mở khóa quốc tế giúp máy dùng được mọi sim Việt Nam mà không cần sim ghép. Bảo hành vĩnh viễn, hỗ trợ 24/7.
+              Ngoài dịch vụ sim ghép, Ngáo Store còn là địa chỉ <strong>mở khóa iPhone Lock ở Hà Nội</strong> uy tín. Mở khóa quốc tế giúp máy dùng được mọi sim Việt Nam mà không cần sim ghép. Bảo hành vĩnh viễn, hỗ trợ 24/7.
             </p>
           </div>
         </div>
       </section>
 
-      {/* H2: Ghép sim iPhone Lock hà nội */}
+      {/* H2: Ghép sim iPhone Lock ở Hà Nội */}
       <section className="py-20 bg-secondary-dark">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-10">
-            Ghép Sim iPhone Lock Hà Nội – Nhanh Chóng, Ổn Định
+            Ghép Sim iPhone Lock Ở Hà Nội – Nhanh Chóng, Ổn Định
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <h3 className="text-xl font-bold text-primary mb-4">
-                Sim ghép hà nội hỗ trợ những dòng máy nào?
+                Sim ghép ở Hà Nội hỗ trợ những dòng máy nào?
               </h3>
               <p className="text-white/70 leading-relaxed mb-6">
-                Dịch vụ <strong>ghép sim iPhone Lock hà nội</strong> tại Ngáo Store hỗ trợ từ iPhone 6 đến iPhone 16 Pro Max. Sim ghép 1 mảnh, 2 mảnh, chế độ EID và TMSI. Hỗ trợ 4G/5G ổn định, tự động kích hoạt không cần cấu hình.
+                Dịch vụ <strong>ghép sim iPhone Lock ở Hà Nội</strong> tại Ngáo Store hỗ trợ từ iPhone 6 đến iPhone 16 Pro Max. Sim ghép 1 mảnh, 2 mảnh, chế độ EID và TMSI. Hỗ trợ 4G/5G ổn định, tự động kích hoạt không cần cấu hình.
               </p>
               <h3 className="text-xl font-bold text-primary mb-4">
                 Ghép sim tận nơi tại Hà Nội
@@ -113,11 +113,11 @@ export default function SimGhepHaNoi() {
         </div>
       </section>
 
-      {/* H2: Mở khóa iPhone Lock hà nội */}
+      {/* H2: Mở khóa iPhone Lock ở Hà Nội */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-10">
-            Mở Khóa iPhone Lock Hà Nội – Giải Pháp Dài Hạn
+            Mở Khóa iPhone Lock Ở Hà Nội – Giải Pháp Dài Hạn
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -125,13 +125,13 @@ export default function SimGhepHaNoi() {
                 Tại sao nên mở khóa thay vì dùng sim ghép?
               </h3>
               <p className="text-secondary/80 leading-relaxed mb-6">
-                <strong>Mở khóa iPhone Lock hà nội</strong> giúp máy trở thành iPhone Quốc Tế. Bạn dùng được mọi sim Việt Nam, không cần sim ghép, không lo mất sóng hay lỗi danh bạ. Đây là giải pháp dài hạn, tiết kiệm chi phí so với thay sim ghép định kỳ.
+                <strong>Mở khóa iPhone Lock ở Hà Nội</strong> giúp máy trở thành iPhone Quốc Tế. Bạn dùng được mọi sim Việt Nam, không cần sim ghép, không lo mất sóng hay lỗi danh bạ. Đây là giải pháp dài hạn, tiết kiệm chi phí so với thay sim ghép định kỳ.
               </p>
               <h3 className="text-xl font-bold text-primary mb-4">
                 Mở khóa iPhone Lock tại Hà Nội ở đâu uy tín?
               </h3>
               <p className="text-secondary/80 leading-relaxed">
-                Ngáo Store là địa chỉ <strong>mở khóa iphone lock hà nội</strong> được nhiều khách hàng tin tưởng. Quy trình chuyên nghiệp, bảo hành vĩnh viễn, hỗ trợ 24/7. Cơ sở tại Thanh Xuân và Duy Tân, thuận tiện di chuyển.
+                Ngáo Store là địa chỉ <strong>mở khóa iphone lock ở Hà Nội</strong> được nhiều khách hàng tin tưởng. Quy trình chuyên nghiệp, bảo hành vĩnh viễn, hỗ trợ 24/7. Cơ sở tại Thanh Xuân và Duy Tân, thuận tiện di chuyển.
               </p>
             </div>
             <div className="bg-secondary-dark/5 rounded-3xl p-8 border border-secondary/10">
@@ -163,7 +163,7 @@ export default function SimGhepHaNoi() {
       <section className="py-20 bg-secondary-dark">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
-            Bảng Giá Sim Ghép Hà Nội & Mở Khóa iPhone Lock
+            Bảng Giá Sim Ghép Tại Hà Nội & Mở Khóa iPhone Lock
           </h2>
           <p className="text-white/60 text-center mb-12 max-w-2xl mx-auto">
             Giá cạnh tranh, chất lượng đảm bảo. Liên hệ Zalo để được tư vấn chi tiết.
@@ -182,7 +182,7 @@ export default function SimGhepHaNoi() {
                 Phổ biến
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Ghép Sim Tận Nơi</h3>
-              <div className="text-3xl font-black text-primary mb-4">Từ 200.000đ</div>
+              <div className="text-3xl font-black text-primary mb-4">Từ 150.000đ</div>
               <p className="text-white/60 text-sm mb-6">Ghép sim tận nơi nội thành Hà Nội. Hỏa tốc 30p-1h.</p>
               <Link href="http://zalo.me/0988012895" target="_blank" className="block w-full py-3 rounded-xl bg-primary hover:bg-primary-dark text-white font-bold text-center transition-all">
                 Đặt Lịch Ghép
@@ -201,7 +201,7 @@ export default function SimGhepHaNoi() {
           {/* CTA mạnh */}
           <div className="bg-gradient-to-r from-primary/20 to-primary/5 border-2 border-primary rounded-3xl p-10 md:p-14 text-center">
             <h2 className="text-2xl md:text-3xl font-black text-white mb-4">
-              Cần Sim Ghép Hà Nội Hoặc Mở Khóa iPhone Lock?
+              Cần Sim Ghép Ở Hà Nội Hoặc Mở Khóa iPhone Lock?
             </h2>
             <p className="text-white/80 text-lg mb-8 max-w-2xl mx-auto">
               Liên hệ Ngáo Store ngay qua Zalo để được tư vấn miễn phí. Ghép sim tận nơi, mở khóa chuyên nghiệp. Hỗ trợ 24/7.
@@ -235,7 +235,7 @@ export default function SimGhepHaNoi() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-secondary mb-8">
-            Sim Ghép Hà Nội – Khu Vực Phục Vụ
+            Sim Ghép Ở Hà Nội – Khu Vực Phục Vụ
           </h2>
           <div className="flex flex-wrap gap-3">
             {[
@@ -248,7 +248,7 @@ export default function SimGhepHaNoi() {
             ))}
           </div>
           <p className="text-secondary/70 mt-6">
-            Ngáo Store hỗ trợ <strong>ghép sim iPhone Lock hà nội</strong> và <strong>mở khóa iphone lock hà nội</strong> tại tất cả các quận nội thành. Khách ở xa có thể gửi máy hoặc đặt sim ghép qua Shopee.
+            Ngáo Store hỗ trợ <strong>ghép sim iPhone Lock ở Hà Nội</strong> và <strong>mở khóa iphone lock ở Hà Nội</strong> tại tất cả các quận nội thành. Khách ở xa có thể gửi máy hoặc đặt sim ghép qua Shopee.
           </p>
         </div>
       </section>

@@ -32,10 +32,10 @@ export default function Footer() {
               <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-primary rounded-full" />
             </h4>
             <ul className="space-y-4 text-white/60">
-              <li><Link target="_blank" href="https://vn.shp.ee/XigKX2F" className="hover:text-primary transition-all flex items-center gap-2"><ExternalLink size={14} /> Sim Ghép TMSI/QPE</Link></li>
-              <li><Link target="_blank" href="https://vn.shp.ee/hdyMno7" className="hover:text-primary transition-all flex items-center gap-2"><ExternalLink size={14} /> Sim Ghép EID</Link></li>
-              <li><Link target="_blank" href="http://zalo.me/0988012895" className="hover:text-primary transition-all flex items-center gap-2"><ExternalLink size={14} /> Mở khóa iPhone Lock</Link></li>
-              <li><Link target="_blank" href="https://shopee.vn/ngaostore86?shopCollection=249953091#product_list" className="hover:text-primary transition-all flex items-center gap-2"><ExternalLink size={14} /> Phụ Kiện iPhone</Link></li>
+              <li><Link target="_blank" href="/products/sim-ghep-bison-new-2025" className="hover:text-primary transition-all flex items-center gap-2"><ExternalLink size={14} /> Sim Ghép TMSI/QPE</Link></li>
+              <li><Link target="_blank" href="/products/sim-ghep-eid" className="hover:text-primary transition-all flex items-center gap-2"><ExternalLink size={14} /> Sim Ghép EID</Link></li>
+              <li><Link target="_blank" href="/products/o-sim-eid" className="hover:text-primary transition-all flex items-center gap-2"><ExternalLink size={14} /> Ổ sim iPhone Lock</Link></li>
+              <li><Link target="_blank" href="/blogs/ghep-sim-iphone-lock" className="hover:text-primary transition-all flex items-center gap-2"><ExternalLink size={14} /> Ghép Sim Tận Nơi</Link></li>
             </ul>
           </div>
 
@@ -64,7 +64,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <div className="text-sm text-white/40 mb-1 font-bold uppercase tracking-wider">Địa chỉ</div>
-                  <div className="text-white/80"><a href="https://maps.app.goo.gl/PrvGM2vGQftcbCMb8" target="_blank">CS1: Số 10 ngõ 28B Hạ Đình</a></div>
+                  <div className="text-white/80"><a href="https://maps.app.goo.gl/PrvGM2vGQftcbCMb8" target="_blank">CS1: 10/28B Hạ Đình, Hà Nội</a></div>
                   <div className="text-white/80"><a href="https://maps.app.goo.gl/r3YDACgDfkLD7H9t9" target="_blank">CS2: 82 Duy Tân, Hà Nội</a></div>
                   <div className="text-white/80"><a href="https://maps.app.goo.gl/oLKE6XtCXRwicWdK6" target="_blank">CS3: Hòa Quý, Đà Nẵng</a></div>
                 </div>
@@ -85,7 +85,7 @@ export default function Footer() {
 
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-white/40 text-sm">
-            © 2026 Ngáo Store. Tất cả quyền được bảo lưu.
+            © {new Date().getFullYear()} Ngáo Store. Tất cả quyền được bảo lưu.
           </div>
           <div className="flex gap-8 text-white/40 text-sm">
             <Link href="#" className="hover:text-white transition-all">Điều khoản</Link>

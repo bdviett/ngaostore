@@ -5,7 +5,7 @@ import Link from "next/link";
 const plans = [
   {
     name: "Ghép Sim Tận Nơi",
-    price: "Từ 200.000",
+    price: "Từ 150.000",
     desc: "Hỗ trợ ghép sim tận nơi nội thành Hà Nội và TP Đà Nẵng. Nhanh chóng, tiện lợi, an toàn.",
     features: [
       "Sim ghép 1 mảnh, 2 mảnh",

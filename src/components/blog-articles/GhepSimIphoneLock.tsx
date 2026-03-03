@@ -173,7 +173,7 @@ export default function GhepSimIphoneLock() {
               </Link>
             </div>
             <p className="text-white/50 text-sm mt-6">
-              Hà Nội: Thanh Xuân, Cầu Giấy | Đà Nẵng: Hòa Quý
+              Hà Nội: Thanh Xuân, Cầu Giấy | Đà Nẵng: Ngũ Hành Sơn, Hải Châu
             </p>
           </div>
         </div>

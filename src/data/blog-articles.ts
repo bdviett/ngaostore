@@ -20,11 +20,11 @@ export const BLOG_ARTICLE_METADATA: Record<
   { title: string; description: string; keywords: string[]; breadcrumbName: string }
 > = {
   "sim-ghep-ha-noi": {
-    title: "Sim Ghép Hà Nội | Ghép Sim iPhone Lock & Mở Khóa Chuyên Nghiệp | Ngáo Store",
+    title: "Sim Ghép Tại Hà Nội | Ghép Sim iPhone Lock & Mở Khóa Chuyên Nghiệp | Ngáo Store",
     description:
-      "Sim ghép hà nội uy tín. Ghép sim iPhone Lock hà nội, mở khóa iPhone Lock hà nội tận nơi. Ngáo Store - Thanh Xuân, Cầu Giấy, Hoàng Mai. Bảo hành 3 tháng. Zalo: 0988 012 895.",
+      "Sim ghép ở Hà Nội uy tín. Ghép sim iPhone Lock ở Hà Nội, mở khóa iPhone Lock ở Hà Nội tận nơi. Ngáo Store - Thanh Xuân, Cầu Giấy, Hoàng Mai. Bảo hành 3 tháng. Zalo: 0988 012 895.",
     keywords: [
-      "sim ghép hà nội",
+      "sim ghép tại hà nội",
       "ghép sim iphone lock hà nội",
       "mở khóa iphone lock hà nội",
       "sim ghép thanh xuân",
@@ -38,12 +38,12 @@ export const BLOG_ARTICLE_METADATA: Record<
   "sim-ghep-da-nang": {
     title: "Sim Ghép Đà Nẵng | Ghép Sim iPhone Lock & Mở Khóa Tận Nơi | Ngáo Store",
     description:
-      "Sim ghép Đà Nẵng uy tín. Ghép sim iPhone Lock Đà Nẵng, mở khóa iPhone Lock Đà Nẵng tận nơi. Ngáo Store - Hòa Quý, Ngũ Hành Sơn. Bảo hành 3 tháng. Zalo: 0988 012 895.",
+      "Sim ghép tại Đà Nẵng uy tín. Ghép sim iPhone Lock tại Đà Nẵng, mở khóa iPhone Lock tại Đà Nẵng tận nơi. Ngáo Store - 206 Phan Huỳnh Điểu, Ngũ Hành Sơn. Bảo hành 3 tháng. Zalo: 0988 012 895.",
     keywords: [
       "sim ghép đà nẵng",
       "ghép sim iphone lock đà nẵng",
       "mở khóa iphone lock đà nẵng",
-      "sim ghép hòa quý",
+      "sim ghép quảng nam",
       "ghép sim tận nơi đà nẵng",
       "sim ghép ngũ hành sơn",
     ],
@@ -136,7 +136,7 @@ export function getBlogArticleJsonLd(slug: string) {
       telephone: "+84988012895",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "Hòa Quý",
+        streetAddress: "206 Phan Huỳnh Điểu, Ngũ Hành Sơn",
         addressLocality: "Đà Nẵng",
         addressCountry: "VN",
       },

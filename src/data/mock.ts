@@ -9,6 +9,14 @@ export type ProductCategory =
   | "op-lung"
   | "phu-kien-khac";
 
+export interface ProductMediaItem {
+  type: "image" | "video";
+  /** Đường dẫn ảnh hoặc link video (YouTube, TikTok, ...) */
+  url: string;
+  /** Ảnh thumbnail cho video (optional, dùng ảnh mặc định nếu không có) */
+  thumbnail?: string;
+}
+
 export interface Product {
   id: string;
   name: string;
@@ -22,6 +30,8 @@ export interface Product {
   slug?: string;
   /** Link mua hàng trên Shopee (nếu có) */
   shopeeUrl?: string;
+  /** Gallery: danh sách ảnh + video. Nếu có thì dùng thay cho image ở trang chi tiết */
+  media?: ProductMediaItem[];
 }
 
 function slugify(text: string): string {

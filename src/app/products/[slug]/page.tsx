@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ContactPinned from "@/components/ContactPinned";
+import ProductGallery from "@/components/ProductGallery";
 import { products, getProductSlug } from "@/data/mock";
 import type { Metadata } from "next";
 import Image from "next/image";
@@ -85,15 +86,21 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
           </nav>
 
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start">
-            <div className="aspect-square relative rounded-3xl overflow-hidden bg-gray-100 border border-gray-100 shadow-lg shadow-gray-200/50">
-              <Image
-                src={product.image}
-                alt={product.name}
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                priority
-              />
+            <div>
+              {product.media && product.media.length > 0 ? (
+                <ProductGallery media={product.media} productName={product.name} />
+              ) : (
+                <div className="aspect-square relative rounded-3xl overflow-hidden bg-gray-100 border border-gray-100 shadow-lg shadow-gray-200/50">
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    priority
+                  />
+                </div>
+              )}
             </div>
 
             <div className="space-y-6">
