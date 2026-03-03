@@ -45,6 +45,17 @@
   },
   {
     "id": "5",
+    "name": "Sim ghép iPhone 16E Lock",
+    "price": "120.000",
+    "shortDescription": "Sim ghép dành cho iPhone 16E Lock, Mode TMSI, 4G/5G ổn định.",
+    "description": "Sim ghép iPhone 16E Lock chuyên Mode TMSI, dành cho iPhone 16E Lock. Mode TMSI cho trải nghiệm ổn định, là sim ghép ngon nhất cho iPhone 16E Lock. Hỗ trợ 4G/5G đầy đủ. Bảo hành 3 tháng, giao hàng toàn quốc. Liên hệ Zalo để được tư vấn và hỗ trợ kích hoạt miễn phí.",
+    "image": "/images/products/iphone-16e-lock.webp",
+    "category": "sim-ghep",
+    "slug": "sim-ghep-iphone-16e-lock",
+    "shopeeUrl": "https://vn.shp.ee/1eXAkBWA"
+  },
+  {
+    "id": "21",
     "name": "Củ sạc Bison 33W GaN",
     "price": "199.000",
     "shortDescription": "Củ sạc nhanh Bison 33W GaN BCH180, chính hãng, bảo hành 12 tháng.",
@@ -217,16 +228,5 @@
     "category": "phu-kien-khac",
     "slug": "loa-bluetooth-energizer-bts055",
     "shopeeUrl": "https://shopee.vn/ngaostore86"
-  },
-  {
-    "id": "21",
-    "name": "Sim ghép iPhone 16E Lock",
-    "price": "120.000",
-    "shortDescription": "Sim ghép dành cho iPhone 16E Lock, Mode TMSI, 4G/5G ổn định.",
-    "description": "Sim ghép iPhone 16E Lock chuyên Mode TMSI, dành cho iPhone 16E Lock. Mode TMSI cho trải nghiệm ổn định, là sim ghép ngon nhất cho iPhone 16E Lock. Hỗ trợ 4G/5G đầy đủ. Bảo hành 3 tháng, giao hàng toàn quốc. Liên hệ Zalo để được tư vấn và hỗ trợ kích hoạt miễn phí.",
-    "image": "/images/products/iphone-16e-lock.webp",
-    "category": "sim-ghep",
-    "slug": "sim-ghep-iphone-16e-lock",
-    "shopeeUrl": "https://vn.shp.ee/1eXAkBWA"
   }
 ]
