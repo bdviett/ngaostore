@@ -6,6 +6,8 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "cleanUrls": true,
+    "trailingSlash": false,
     "redirects": [
       { "source": "/sim-ghep-ha-noi", "destination": "/blogs/sim-ghep-ha-noi", "type": 301 },
       { "source": "/sim-ghep-da-nang", "destination": "/blogs/sim-ghep-da-nang", "type": 301 },
@@ -15,8 +17,8 @@
     "rewrites": [
       { "source": "/products", "destination": "/products.html" },
       { "source": "/blogs", "destination": "/blogs.html" },
-      { "source": "/blogs/:slug", "destination": "/blogs/:slug.html" },
-      { "source": "/products/:slug", "destination": "/products/:slug.html" },
+      { "regex": "^/blogs/([a-zA-Z0-9_-]+)/?$", "destination": "/blogs/:1.html" },
+      { "regex": "^/products/([a-zA-Z0-9_-]+)/?$", "destination": "/products/:1.html" },
       { "source": "**", "destination": "/index.html" }
     ]
   }
