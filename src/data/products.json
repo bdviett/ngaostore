@@ -10,8 +10,15 @@
     "category": "sim-ghep",
     "shopeeUrl": "https://vn.shp.ee/XigKX2F",
     "media": [
-      { "type": "image", "url": "/images/products/bs-new.webp" },
-      { "type": "video", "url": "https://www.youtube.com/shorts/EUbYVwhcjYI", "thumbnail": "/images/products/bs-new.webp" }
+      {
+        "type": "image",
+        "url": "/images/products/bs-new.webp"
+      },
+      {
+        "type": "video",
+        "url": "https://www.youtube.com/shorts/EUbYVwhcjYI",
+        "thumbnail": "/images/products/bs-new.webp"
+      }
     ]
   },
   {
@@ -25,8 +32,15 @@
     "slug": "sim-ghep-bison-pro-1manh",
     "shopeeUrl": "https://vn.shp.ee/TfW7LVi",
     "media": [
-      { "type": "image", "url": "/images/products/bs-pro.webp" },
-      { "type": "video", "url": "https://www.youtube.com/shorts/Krn8n3zMu5E", "thumbnail": "/images/products/bs-pro.webp" }
+      {
+        "type": "image",
+        "url": "/images/products/bs-pro.webp"
+      },
+      {
+        "type": "video",
+        "url": "https://www.youtube.com/shorts/Krn8n3zMu5E",
+        "thumbnail": "/images/products/bs-pro.webp"
+      }
     ]
   },
   {
@@ -40,8 +54,15 @@
     "slug": "sim-ghep-dual-eid",
     "shopeeUrl": "https://vn.shp.ee/VbhFxAC",
     "media": [
-      { "type": "image", "url": "/images/products/dual.webp" },
-      { "type": "video", "url": "https://www.tiktok.com/@ngaostore86/video/7611822262769224981", "thumbnail": "/images/products/dual.webp" }
+      {
+        "type": "image",
+        "url": "/images/products/dual.webp"
+      },
+      {
+        "type": "video",
+        "url": "https://www.tiktok.com/@ngaostore86/video/7611822262769224981",
+        "thumbnail": "/images/products/dual.webp"
+      }
     ]
   },
   {
@@ -55,8 +76,15 @@
     "slug": "o-sim-eid",
     "shopeeUrl": "https://vn.shp.ee/sxRuZpxF",
     "media": [
-      { "type": "image", "url": "/images/products/o-eid.webp" },
-      { "type": "video", "url": "https://www.tiktok.com/@ngaostore86/video/7612553532234796308", "thumbnail": "/images/products/o-eid.webp" }
+      {
+        "type": "image",
+        "url": "/images/products/o-eid.webp"
+      },
+      {
+        "type": "video",
+        "url": "https://www.tiktok.com/@ngaostore86/video/7612553532234796308",
+        "thumbnail": "/images/products/o-eid.webp"
+      }
     ]
   },
   {
@@ -70,8 +98,15 @@
     "slug": "sim-ghep-iphone-16e-lock",
     "shopeeUrl": "https://vn.shp.ee/1eXAkBWA",
     "media": [
-      { "type": "image", "url": "/images/products/iphone-16e-lock.webp" },
-      { "type": "video", "url": "https://www.youtube.com/shorts/Krn8n3zMu5E", "thumbnail": "/images/products/iphone-16e-lock.webp" }
+      {
+        "type": "image",
+        "url": "/images/products/iphone-16e-lock.webp"
+      },
+      {
+        "type": "video",
+        "url": "https://www.youtube.com/shorts/Krn8n3zMu5E",
+        "thumbnail": "/images/products/iphone-16e-lock.webp"
+      }
     ]
   },
   {
@@ -85,8 +120,15 @@
     "slug": "co-sac-bison-33w-gan",
     "shopeeUrl": "https://vn.shp.ee/sFd1B3Fg",
     "media": [
-      { "type": "image", "url": "/images/products/bch180.jpg" },
-      { "type": "video", "url": "https://youtube.com/shorts/uJEbSa28U6s?si=A7SH1P91Ygknm_iA", "thumbnail": "/images/products/bch180.jpg" }
+      {
+        "type": "image",
+        "url": "/images/products/bch180.jpg"
+      },
+      {
+        "type": "video",
+        "url": "https://youtube.com/shorts/uJEbSa28U6s?si=A7SH1P91Ygknm_iA",
+        "thumbnail": "/images/products/bch180.jpg"
+      }
     ]
   },
   {
@@ -100,8 +142,15 @@
     "slug": "co-sac-bison-gan-20w",
     "shopeeUrl": "https://vn.shp.ee/pf6tRzHN",
     "media": [
-      { "type": "image", "url": "/images/products/bch541.jpg" },
-      { "type": "video", "url": "https://youtube.com/shorts/FkzGQ07UNYw?si=rXkC2E25I2R5h9KF", "thumbnail": "/images/products/bch541.jpg" }
+      {
+        "type": "image",
+        "url": "/images/products/bch541.jpg"
+      },
+      {
+        "type": "video",
+        "url": "https://youtube.com/shorts/FkzGQ07UNYw?si=rXkC2E25I2R5h9KF",
+        "thumbnail": "/images/products/bch541.jpg"
+      }
     ]
   },
   {
@@ -115,8 +164,15 @@
     "slug": "cap-sac-c-to-lightning-cb110",
     "shopeeUrl": "https://vn.shp.ee/8XS2QUWR",
     "media": [
-      { "type": "image", "url": "/images/products/cb110.jpg" },
-      { "type": "video", "url": "https://www.youtube.com/shorts/EOQmtqZHCkU", "thumbnail": "/images/products/cb110.jpg" }
+      {
+        "type": "image",
+        "url": "/images/products/cb110.jpg"
+      },
+      {
+        "type": "video",
+        "url": "https://www.youtube.com/shorts/EOQmtqZHCkU",
+        "thumbnail": "/images/products/cb110.jpg"
+      }
     ]
   },
   {
@@ -130,8 +186,15 @@
     "slug": "cap-sac-c-to-c-cb100",
     "shopeeUrl": "https://vn.shp.ee/8XS2QUWR",
     "media": [
-      { "type": "image", "url": "/images/products/cb100.jpg" },
-      { "type": "video", "url": "https://www.youtube.com/shorts/qIZQqVTcBRQ", "thumbnail": "/images/products/cb100.jpg" }
+      {
+        "type": "image",
+        "url": "/images/products/cb100.jpg"
+      },
+      {
+        "type": "video",
+        "url": "https://www.youtube.com/shorts/qIZQqVTcBRQ",
+        "thumbnail": "/images/products/cb100.jpg"
+      }
     ]
   },
   {
@@ -145,8 +208,15 @@
     "slug": "cap-sac-c-to-lightning-cb113",
     "shopeeUrl": "https://vn.shp.ee/8XS2QUWR",
     "media": [
-      { "type": "image", "url": "/images/products/cb113.jpg" },
-      { "type": "video", "url": "https://www.youtube.com/shorts/ikSiHoqlXLw", "thumbnail": "/images/products/cb113.jpg" }
+      {
+        "type": "image",
+        "url": "/images/products/cb113.jpg"
+      },
+      {
+        "type": "video",
+        "url": "https://www.youtube.com/shorts/ikSiHoqlXLw",
+        "thumbnail": "/images/products/cb113.jpg"
+      }
     ]
   },
   {
@@ -160,8 +230,15 @@
     "slug": "cap-sac-c-to-c-cb103",
     "shopeeUrl": "https://vn.shp.ee/8XS2QUWR",
     "media": [
-      { "type": "image", "url": "/images/products/cb103.jpg" },
-      { "type": "video", "url": "https://www.youtube.com/shorts/RoHZXK6j75o", "thumbnail": "/images/products/cb103.jpg" }
+      {
+        "type": "image",
+        "url": "/images/products/cb103.jpg"
+      },
+      {
+        "type": "video",
+        "url": "https://www.youtube.com/shorts/RoHZXK6j75o",
+        "thumbnail": "/images/products/cb103.jpg"
+      }
     ]
   },
   {
@@ -175,8 +252,15 @@
     "slug": "sim-ghep-heicard-pro-gtr",
     "shopeeUrl": "https://vn.shp.ee/9jiEqvs",
     "media": [
-      { "type": "image", "url": "/images/products/hc.webp" },
-      { "type": "video", "url": "https://youtube.com/shorts/chArX0lwEcA?si=h0wPw4ywF6pqBGVp", "thumbnail": "/images/products/hc.webp" }
+      {
+        "type": "image",
+        "url": "/images/products/hc.webp"
+      },
+      {
+        "type": "video",
+        "url": "https://youtube.com/shorts/chArX0lwEcA?si=h0wPw4ywF6pqBGVp",
+        "thumbnail": "/images/products/hc.webp"
+      }
     ]
   },
   {
@@ -190,8 +274,15 @@
     "slug": "sim-ghep-vipbs-6s",
     "shopeeUrl": "https://vn.shp.ee/6hSgBDi",
     "media": [
-      { "type": "image", "url": "/images/products/vipbs.webp" },
-      { "type": "video", "url": "https://www.tiktok.com/@ngaostore86/video/7611948374518009109", "thumbnail": "/images/products/vipbs.webp" }
+      {
+        "type": "image",
+        "url": "/images/products/vipbs.webp"
+      },
+      {
+        "type": "video",
+        "url": "https://www.tiktok.com/@ngaostore86/video/7611948374518009109",
+        "thumbnail": "/images/products/vipbs.webp"
+      }
     ]
   },
   {
@@ -205,8 +296,15 @@
     "slug": "sim-ghep-bison-sed",
     "shopeeUrl": "https://vn.shp.ee/4fP49Nt5",
     "media": [
-      { "type": "image", "url": "/images/products/bs-eid.webp" },
-      { "type": "video", "url": "https://www.tiktok.com/@ngaostore86/video/7611941963276881172", "thumbnail": "/images/products/bs-eid.webp" }
+      {
+        "type": "image",
+        "url": "/images/products/bs-eid.webp"
+      },
+      {
+        "type": "video",
+        "url": "https://www.tiktok.com/@ngaostore86/video/7611941963276881172",
+        "thumbnail": "/images/products/bs-eid.webp"
+      }
     ]
   },
   {
@@ -220,8 +318,15 @@
     "slug": "cuong-luc-bison",
     "shopeeUrl": "https://shopee.vn/ngaostore86",
     "media": [
-      { "type": "image", "url": "/images/products/cuong-luc-bison.jpg" },
-      { "type": "video", "url": "https://youtu.be/F0bEj9_mr28", "thumbnail": "/images/products/cuong-luc-bison.jpg" }
+      {
+        "type": "image",
+        "url": "/images/products/cuong-luc-bison.jpg"
+      },
+      {
+        "type": "video",
+        "url": "https://youtu.be/F0bEj9_mr28",
+        "thumbnail": "/images/products/cuong-luc-bison.jpg"
+      }
     ]
   },
   {
@@ -289,8 +394,15 @@
     "slug": "loa-bluetooth-energizer-bts055",
     "shopeeUrl": "https://shopee.vn/ngaostore86",
     "media": [
-      { "type": "image", "url": "/images/products/bts055.jpg" },
-      { "type": "video", "url": "https://youtube.com/shorts/XWDAxNxU8qA?si=Rjk8rx5IAzhEAw0o", "thumbnail": "/images/products/bts055.jpg" }
+      {
+        "type": "image",
+        "url": "/images/products/bts055.jpg"
+      },
+      {
+        "type": "video",
+        "url": "https://youtube.com/shorts/XWDAxNxU8qA?si=Rjk8rx5IAzhEAw0o",
+        "thumbnail": "/images/products/bts055.jpg"
+      }
     ]
   }
 ]

@@ -8,7 +8,9 @@
     "build:firebase": "next build && firebase deploy",
     "start": "next start",
     "lint": "next lint",
-    "compress-images": "node scripts/compress-images.js"
+    "compress-images": "node scripts/compress-images.js",
+    "update-urls": "node scripts/update-urls.js",
+    "export-urls": "node scripts/export-urls.js"
   },
   "dependencies": {
     "axios": "^1.13.4",
