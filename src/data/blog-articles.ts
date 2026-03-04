@@ -7,6 +7,7 @@ export const BLOG_ARTICLE_SLUGS = [
   "sim-ghep-da-nang",
   "ghep-sim-iphone-lock",
   "mua-sim-ghep",
+  "thay-o-sim-eid-iphone-lock",
 ] as const;
 
 export type BlogArticleSlug = (typeof BLOG_ARTICLE_SLUGS)[number];
@@ -76,6 +77,22 @@ export const BLOG_ARTICLE_METADATA: Record<
       "mua sim ghép ở đâu",
     ],
     breadcrumbName: "Mua Sim Ghép",
+  },
+  "thay-o-sim-eid-iphone-lock": {
+    title: "Thay Ổ Sim EID iPhone Lock | Dịch Vụ Thay Ổ Sim Chuyên Nghiệp | Ngáo Store",
+    description:
+      "Dịch vụ thay ổ sim eid iPhone Lock tại Hà Nội & Đà Nẵng. Thay ổ 2 sim vật lý, ổ sim EID sẵn sim ghép. Bảo hành 3 tháng, làm nhanh 30-60 phút. Zalo: 0988 012 895.",
+    keywords: [
+      "độ ổ sim iphone lock",
+      "thay ổ sim iphone lock",
+      "thay ổ sim eid",
+      "độ ổ 2 sim vật lý",
+      "thay ổ sim eid tại hà nội",
+      "thay ổ sim eid tại đà nẵng",
+      "dịch vụ độ ổ sim",
+      "thay ổ sim eid sẵn sim ghép",
+    ],
+    breadcrumbName: "Thay Ổ Sim EID iPhone Lock",
   },
 };
 
@@ -170,6 +187,17 @@ export function getBlogArticleJsonLd(slug: string) {
       description: meta.description,
       url,
       numberOfItems: 5,
+    };
+  }
+
+  if (slug === "thay-o-sim-eid-iphone-lock") {
+    return {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: "Độ Ổ Sim iPhone Lock - Ngáo Store",
+      description: meta.description,
+      provider: { "@type": "LocalBusiness", name: "Ngáo Store", telephone: "+84988012895" },
+      areaServed: [{ "@type": "City", name: "Hà Nội" }, { "@type": "City", name: "Đà Nẵng" }],
     };
   }
 

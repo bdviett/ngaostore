@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ContactPinned from "@/components/ContactPinned";
 import Link from "next/link";
+import Image from "next/image";
 import { Check, MapPin, Phone, Shield, Zap, ArrowRight } from "lucide-react";
 
 export default function SimGhepDaNang() {
@@ -12,6 +13,8 @@ export default function SimGhepDaNang() {
       <section className="relative pt-28 pb-20 overflow-hidden bg-secondary-dark">
         <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-primary/10 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/4" />
         <div className="container mx-auto px-4 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
           <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-full mb-6">
             <MapPin className="text-primary" size={18} />
             <span className="text-white/80 text-sm font-medium uppercase tracking-wider">Dịch vụ tại Đà Nẵng</span>
@@ -43,6 +46,19 @@ export default function SimGhepDaNang() {
                 <span>{item.text}</span>
               </div>
             ))}
+          </div>
+            </div>
+            <div className="relative order-2 lg:order-none">
+              <div className="relative z-10 bg-gradient-to-br from-white/10 to-white/5 p-4 rounded-[30px] border border-white/10 backdrop-blur-sm">
+                <Image
+                  src="/images/ghep-sim-da-nang.png"
+                  alt="Sim ghép tại Đà Nẵng - Ngáo Store"
+                  width={500}
+                  height={500}
+                  className="rounded-[20px] shadow-2xl w-full h-auto object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>

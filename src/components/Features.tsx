@@ -21,8 +21,8 @@ const features = [
     color: "bg-blue-500"
   },
   {
-    title: "Fix Full Lỗi Danh Bạ",
-    desc: "Không cần thêm +84, tự động nhận diện đầu số và hiển thị tên người gọi.",
+    title: "Fix Full Lỗi Máy Lock",
+    desc: "Fix full lỗi máy lock: Tiktok Shop, Google Map xe máy, Điểm Truy Cập, +84...",
     icon: <Settings className="w-8 h-8" />,
     color: "bg-primary"
   },
@@ -33,34 +33,10 @@ const features = [
     color: "bg-purple-500"
   },
   {
-    title: "Dễ Dàng Cài Đặt",
-    desc: "Chỉ cần lắp sim vào là máy tự động nhận, không cần cấu hình phức tạp, hỗ trợ kích hoạt online nếu gặp khó khăn.",
+    title: "Hỗ Trợ Miễn Phí",
+    desc: "Sim ghép lắp đặt dễ dàng, hỗ trợ kích hoạt 24/7 online miễn phí nếu có vấn đề.",
     icon: <Zap className="w-8 h-8" />,
     color: "bg-yellow-500"
-  },
-  {
-    title: "Bảo Mật Tuyệt Đối",
-    desc: "Sim ghép không can thiệp phần cứng, dữ liệu, iCloud. Hoàn toàn không ảnh hưởng đến chức năng của máy.",
-    icon: <Lock className="w-8 h-8" />,
-    color: "bg-green-500"
-  },
-  {
-    title: "Cập Nhật Liên Tục",
-    desc: "Phần mềm sim ghép được cập nhật thường xuyên để thích nghi với các bản iOS mới nhất.",
-    icon: <RefreshCw className="w-8 h-8" />,
-    color: "bg-orange-500"
-  },
-  {
-    title: "Chuyển Vùng Quốc Tế",
-    desc: "Tự tin mang iPhone Lock đi du lịch nước ngoài với hỗ trợ roaming tốt, sóng 4G/5G ổn định.",
-    icon: <Globe className="w-8 h-8" />,
-    color: "bg-indigo-500"
-  },
-  {
-    title: "Hỗ Trợ 24/7",
-    desc: "Đội ngũ kỹ thuật của Ngáo Store luôn sẵn sàng hỗ trợ bạn bất cứ lúc nào, hỗ trợ ghép 24/7.",
-    icon: <LifeBuoy className="w-8 h-8" />,
-    color: "bg-pink-500"
   }
 ];
 

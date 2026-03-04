@@ -13,12 +13,14 @@ const SimGhepHaNoi = dynamic(() => import("@/components/blog-articles/SimGhepHaN
 const SimGhepDaNang = dynamic(() => import("@/components/blog-articles/SimGhepDaNang"), { ssr: true });
 const GhepSimIphoneLock = dynamic(() => import("@/components/blog-articles/GhepSimIphoneLock"), { ssr: true });
 const MuaSimGhep = dynamic(() => import("@/components/blog-articles/MuaSimGhep"), { ssr: true });
+const ThayOSimIphoneLock = dynamic(() => import("@/components/blog-articles/ThayOSimIphoneLock"), { ssr: true });
 
 const ARTICLE_COMPONENTS = {
   "sim-ghep-ha-noi": SimGhepHaNoi,
   "sim-ghep-da-nang": SimGhepDaNang,
   "ghep-sim-iphone-lock": GhepSimIphoneLock,
   "mua-sim-ghep": MuaSimGhep,
+  "thay-o-sim-eid-iphone-lock": ThayOSimIphoneLock,
 } as const;
 
 type Props = { params: Promise<{ slug: string }> };
