@@ -133,7 +133,7 @@ export function getBlogArticleJsonLd(slug: string) {
         addressCountry: "VN",
       },
       areaServed: { "@type": "City", name: "Hà Nội" },
-      priceRange: "99.000đ - 300.000đ",
+      priceRange: "99.000đ - 250.000đ",
       openingHoursSpecification: {
         "@type": "OpeningHoursSpecification",
         dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
@@ -158,7 +158,7 @@ export function getBlogArticleJsonLd(slug: string) {
         addressCountry: "VN",
       },
       areaServed: { "@type": "City", name: "Đà Nẵng" },
-      priceRange: "99.000đ - 300.000đ",
+      priceRange: "99.000đ - 250.000đ",
       openingHoursSpecification: {
         "@type": "OpeningHoursSpecification",
         dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],

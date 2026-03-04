@@ -68,7 +68,7 @@
   {
     "id": "4",
     "name": "Ổ sim EID sẵn sim ghép",
-    "price": "300.000",
+    "price": "250.000",
     "shortDescription": "Ổ sim EID tích hợp sẵn sim ghép, hỗ trợ iPhone 12 đến 16 Pro Max, Mode EID, 4G/5G ổn định.",
     "description": "Ổ sim EID tích hợp sẵn sim ghép bên trong, không cần ghép thêm. Phù hợp iPhone 12 đến 16 Pro Max đã độ ổ 2 sim vật lý. Mode EID ổn định, 4G/5G mạnh mẽ. Tiện lợi, lắp khay mặt dưới là dùng ngay. Bảo hành 3 tháng. Giao hàng toàn quốc, hỗ trợ 24/7.",
     "image": "/images/products/o-eid.webp",
@@ -126,7 +126,7 @@
       },
       {
         "type": "video",
-        "url": "https://youtube.com/shorts/uJEbSa28U6s?si=A7SH1P91Ygknm_iA",
+        "url": "https://youtube.com/shorts/7Y0m7Wa-UQ4?feature=share",
         "thumbnail": "/images/products/bch180.jpg"
       }
     ]
@@ -135,21 +135,21 @@
     "id": "6",
     "name": "Củ sạc Bison GaN 20w",
     "price": "160.000",
-    "shortDescription": "Củ cáp sạc nhanh Bison GaN 20w mini BCH541, chính hãng, bảo hành 12 tháng.",
-    "description": "Củ sạc Bison GaN 20W mini BCH541 thiết kế nhỏ gọn, dễ mang theo. Công nghệ GaN, sạc nhanh cho iPhone, không nóng máy. Chính hãng Bison, bảo hành 12 tháng. Phù hợp sạc iPhone, AirPods. Giao hàng toàn quốc.",
-    "image": "/images/products/bch541.jpg",
+    "shortDescription": "Củ cáp sạc nhanh Bison GaN 20w mini BCH542, chính hãng, bảo hành 12 tháng.",
+    "description": "Củ sạc Bison GaN 20W mini BCH542 thiết kế nhỏ gọn, dễ mang theo. Công nghệ GaN, sạc nhanh cho iPhone, không nóng máy. Chính hãng Bison, bảo hành 12 tháng. Phù hợp sạc iPhone, AirPods. Giao hàng toàn quốc.",
+    "image": "/images/products/bch542.webp",
     "category": "sac-cap",
     "slug": "co-sac-bison-gan-20w",
     "shopeeUrl": "https://vn.shp.ee/pf6tRzHN",
     "media": [
       {
         "type": "image",
-        "url": "/images/products/bch541.jpg"
+        "url": "/images/products/bch542.webp"
       },
       {
         "type": "video",
-        "url": "https://youtube.com/shorts/FkzGQ07UNYw?si=rXkC2E25I2R5h9KF",
-        "thumbnail": "/images/products/bch541.jpg"
+        "url": "https://youtube.com/shorts/AfR2Er557zA?feature=share",
+        "thumbnail": "/images/products/bch542.webp"
       }
     ]
   },
@@ -157,21 +157,21 @@
     "id": "7",
     "name": "Cáp sạc C to Lightning",
     "price": "100.000",
-    "shortDescription": "Chất liệu Silicon, mã CB110, chính hãng, bảo hành 12 tháng.",
-    "description": "Cáp sạc C to Lightning mã CB110, chất liệu Silicon mềm dẻo, bền. Hỗ trợ sạc nhanh, truyền dữ liệu. Đầu cắm chắc chắn, tương thích iPhone 8 trở lên. Chính hãng Bison, bảo hành 12 tháng. Giao hàng toàn quốc.",
-    "image": "/images/products/cb110.jpg",
+    "shortDescription": "Chất liệu Silicon, mã CB119, chính hãng, bảo hành 12 tháng.",
+    "description": "Cáp sạc C to Lightning mã CB119, chất liệu Silicon mềm dẻo, bền. Hỗ trợ sạc nhanh, truyền dữ liệu. Đầu cắm chắc chắn, tương thích iPhone 8 trở lên. Chính hãng Bison, bảo hành 12 tháng. Giao hàng toàn quốc.",
+    "image": "/images/products/cb119.jpg",
     "category": "sac-cap",
-    "slug": "cap-sac-c-to-lightning-cb110",
+    "slug": "cap-sac-c-to-lightning-cb119",
     "shopeeUrl": "https://vn.shp.ee/8XS2QUWR",
     "media": [
       {
         "type": "image",
-        "url": "/images/products/cb110.jpg"
+        "url": "/images/products/cb119.jpg"
       },
       {
         "type": "video",
-        "url": "https://www.youtube.com/shorts/EOQmtqZHCkU",
-        "thumbnail": "/images/products/cb110.jpg"
+        "url": "https://youtube.com/shorts/pWCHEutESIk?feature=share",
+        "thumbnail": "/images/products/cb119.jpg"
       }
     ]
   },
@@ -192,7 +192,7 @@
       },
       {
         "type": "video",
-        "url": "https://www.youtube.com/shorts/qIZQqVTcBRQ",
+        "url": "https://youtube.com/shorts/2YL_qDFwuPQ?feature=share",
         "thumbnail": "/images/products/cb100.jpg"
       }
     ]
@@ -214,7 +214,7 @@
       },
       {
         "type": "video",
-        "url": "https://www.youtube.com/shorts/ikSiHoqlXLw",
+        "url": "https://youtube.com/shorts/RzQrXog44qc?feature=share",
         "thumbnail": "/images/products/cb113.jpg"
       }
     ]
@@ -243,6 +243,16 @@
   },
   {
     "id": "11",
+    "name": "Cáp USB to Lightning",
+    "price": "80.000",
+    "shortDescription": "Cáp sạc Bison USB to Lightning, mã CB105, chính hãng, bảo hành 12 tháng.",
+    "description": "Cáp sạc USB to Lightning mã CB105, dùng sạc từ cổng USB thường (laptop, sạc dự phòng). Chất liệu Silicon, bền. Tương thích iPhone 8 trở lên. Bảo hành 12 tháng. Giao hàng toàn quốc.",
+    "image": "/images/products/cb105.jpg",
+    "category": "sac-cap",
+    "shopeeUrl": "https://vn.shp.ee/KcntnVYF"
+  },
+  {
+    "id": "19",
     "name": "Sim ghép Heicard Pro",
     "price": "120.000",
     "shortDescription": "Sim ghép Heicard Pro GTR 5.8, hỗ trợ iPhone 8 đến 16 Pro Max, Mode TMSI/EID, 4G/5G ổn định.",
