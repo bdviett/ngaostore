@@ -30,6 +30,8 @@ export interface Product {
   slug?: string;
   /** Link mua hàng trên Shopee (nếu có) */
   shopeeUrl?: string;
+  /** Trạng thái tồn kho: true = sẵn hàng, false = hết hàng. Mặc định true nếu không có */
+  inStock?: boolean;
   /** Gallery: danh sách ảnh + video. Nếu có thì dùng thay cho image ở trang chi tiết */
   media?: ProductMediaItem[];
 }

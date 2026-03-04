@@ -41,6 +41,7 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
   const product = findProductBySlug(params.slug);
   if (!product) notFound();
 
+  const inStock = product.inStock !== false;
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -51,7 +52,7 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
       "@type": "Offer",
       price: parseInt(product.price.replace(/\./g, ""), 10),
       priceCurrency: "VND",
-      availability: "https://schema.org/InStock",
+      availability: inStock ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
       url: `${SITE_URL}/products/${getProductSlug(product)}`,
     },
     brand: {
@@ -105,7 +106,16 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
 
             <div className="space-y-6">
               <h1 className="text-3xl md:text-4xl font-extrabold text-secondary leading-tight">{product.name}</h1>
-              <p className="text-primary font-bold text-2xl">{product.price} VNĐ</p>
+              <div className="flex items-center gap-4">
+                <p className="text-primary font-bold text-2xl">{product.price} VNĐ</p>
+                <span
+                  className={`px-4 py-1.5 rounded-full text-sm font-bold ${
+                    inStock ? "bg-green-100 text-green-700" : "bg-gray-200 text-gray-600"
+                  }`}
+                >
+                  {inStock ? "Sẵn hàng" : "Hết hàng"}
+                </span>
+              </div>
               <p className="text-gray-600 leading-relaxed">{product.description}</p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-2">
@@ -121,9 +131,13 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
                   href={product.shopeeUrl || SHOPEE_FALLBACK}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center flex-1 px-10 py-4 rounded-2xl font-bold text-lg border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all"
+                  className={`inline-flex items-center justify-center flex-1 px-10 py-4 rounded-2xl font-bold text-lg transition-all ${
+                    inStock
+                      ? "border-2 border-primary text-primary hover:bg-primary hover:text-white"
+                      : "border-2 border-gray-300 text-gray-500 hover:bg-gray-100"
+                  }`}
                 >
-                  Mua ngay tại Shopee
+                  {inStock ? "Mua ngay tại Shopee" : "Xem trên Shopee"}
                 </Link>
               </div>
 

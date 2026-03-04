@@ -1,15 +1,15 @@
 #!/usr/bin/env node
 /**
- * Export shopeeUrl và videoUrl hiện tại ra urls-update.json
+ * Export shopeeUrl, videoUrl và inStock hiện tại ra product-update.json
  * Dùng để có template sẵn khi cần batch update
- * Chạy: npm run export-urls
+ * Chạy: npm run export-products
  */
 
 const fs = require("fs");
 const path = require("path");
 
 const PRODUCTS_PATH = path.join(__dirname, "../src/data/products.json");
-const OUTPUT_PATH = path.join(__dirname, "urls-update.json");
+const OUTPUT_PATH = path.join(__dirname, "product-update.json");
 
 function getProductSlug(product) {
   if (product.slug) return product.slug;
@@ -36,11 +36,12 @@ function main() {
       result[p.id] = { name: p.name, slug: getProductSlug(p) };
       if (p.shopeeUrl) result[p.id].shopeeUrl = p.shopeeUrl;
       if (video?.url) result[p.id].videoUrl = video.url;
+      result[p.id].inStock = p.inStock !== false;
     }
   }
 
   fs.writeFileSync(OUTPUT_PATH, JSON.stringify(result, null, 2) + "\n", "utf8");
-  console.log(`✓ Đã export ${Object.keys(result).length} sản phẩm ra urls-update.json`);
+  console.log(`✓ Đã export ${Object.keys(result).length} sản phẩm ra product-update.json`);
 }
 
 main();

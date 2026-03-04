@@ -9,8 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "compress-images": "node scripts/compress-images.js",
-    "update-urls": "node scripts/update-urls.js",
-    "export-urls": "node scripts/export-urls.js"
+    "update-products": "node scripts/update-products.js",
+    "export-products": "node scripts/export-products.js"
   },
   "dependencies": {
     "axios": "^1.13.4",

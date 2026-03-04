@@ -1,20 +1,20 @@
 #!/usr/bin/env node
 /**
- * Batch update shopeeUrl và videoUrl trong products.json
+ * Batch update shopeeUrl, videoUrl và inStock trong products.json
  *
  * Cách dùng:
- * 1. Chỉnh sửa scripts/urls-update.json (dùng id hoặc slug sản phẩm làm key)
- * 2. Chạy: npm run update-urls
+ * 1. Chỉnh sửa scripts/product-update.json (dùng id hoặc slug sản phẩm làm key)
+ * 2. Chạy: npm run update-products
  *
- * Ví dụ urls-update.json:
- * { "1": { "shopeeUrl": "...", "videoUrl": "..." }, "sim-ghep-dual-eid": { "videoUrl": "..." } }
+ * Ví dụ product-update.json:
+ * { "1": { "shopeeUrl": "...", "videoUrl": "...", "inStock": true }, "sim-ghep-dual-eid": { "videoUrl": "...", "inStock": false } }
  */
 
 const fs = require("fs");
 const path = require("path");
 
 const PRODUCTS_PATH = path.join(__dirname, "../src/data/products.json");
-const UPDATE_PATH = path.join(__dirname, "urls-update.json");
+const UPDATE_PATH = path.join(__dirname, "product-update.json");
 
 function getProductSlug(product) {
   if (product.slug) return product.slug;
@@ -58,6 +58,10 @@ function main() {
         video.url = data.videoUrl;
         count++;
       }
+    }
+    if (data.inStock !== undefined) {
+      product.inStock = !!data.inStock;
+      count++;
     }
   }
 

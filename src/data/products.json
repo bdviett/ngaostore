@@ -19,7 +19,8 @@
         "url": "https://www.youtube.com/shorts/EUbYVwhcjYI",
         "thumbnail": "/images/products/bs-new.webp"
       }
-    ]
+    ],
+    "inStock": false
   },
   {
     "id": "0c523fab-f5db-4c21-9990-cd4c727a08ad",
@@ -41,7 +42,8 @@
         "url": "https://youtube.com/shorts/chArX0lwEcA?si=h0wPw4ywF6pqBGVp",
         "thumbnail": "/images/products/hc.webp"
       }
-    ]
+    ],
+    "inStock": true
   },
   {
     "id": "c2db92cd-add8-4a37-bb22-0a44eeca3321",
@@ -63,7 +65,8 @@
         "url": "https://www.tiktok.com/@ngaostore86/video/7611948374518009109",
         "thumbnail": "/images/products/vipbs.webp"
       }
-    ]
+    ],
+    "inStock": true
   },
   {
     "id": "a9a08b09-0bac-4808-82c4-5a05d3cc191e",
@@ -85,7 +88,8 @@
         "url": "https://www.tiktok.com/@ngaostore86/video/7611941963276881172",
         "thumbnail": "/images/products/bs-eid.webp"
       }
-    ]
+    ],
+    "inStock": true
   },
   {
     "id": "8e413c4a-a037-43ee-932b-4f33ed5e804a",
@@ -107,7 +111,8 @@
         "url": "https://www.youtube.com/shorts/Krn8n3zMu5E",
         "thumbnail": "/images/products/bs-pro.webp"
       }
-    ]
+    ],
+    "inStock": true
   },
   {
     "id": "3ad4de84-c6d4-4d10-88ff-7b8aec223144",
@@ -129,7 +134,8 @@
         "url": "https://www.tiktok.com/@ngaostore86/video/7611822262769224981",
         "thumbnail": "/images/products/dual.webp"
       }
-    ]
+    ],
+    "inStock": true
   },
   {
     "id": "d90bbc09-57ff-432a-854a-e7bf7386be67",
@@ -151,11 +157,12 @@
         "url": "https://www.tiktok.com/@ngaostore86/video/7612553532234796308",
         "thumbnail": "/images/products/o-eid.webp"
       }
-    ]
+    ],
+    "inStock": true
   },
   {
     "id": "2ce9acd5-54f9-4a51-941e-c8e5d6118418",
-    "name": "Sim ghép iPhone 16E Lock",
+    "name": "Sim ghép iPhone 16E",
     "price": "120.000",
     "shortDescription": "Sim ghép dành cho iPhone 16E Lock, Mode TMSI, 4G/5G ổn định.",
     "description": "Sim ghép iPhone 16E Lock chuyên Mode TMSI, dành cho iPhone 16E Lock. Mode TMSI cho trải nghiệm ổn định, là sim ghép ngon nhất cho iPhone 16E Lock. Hỗ trợ 4G/5G đầy đủ. Bảo hành 3 tháng, giao hàng toàn quốc. Liên hệ Zalo để được tư vấn và hỗ trợ kích hoạt miễn phí.",
@@ -173,11 +180,12 @@
         "url": "https://www.youtube.com/shorts/Krn8n3zMu5E",
         "thumbnail": "/images/products/iphone-16e-lock.webp"
       }
-    ]
+    ],
+    "inStock": true
   },
   {
     "id": "8b7e525e-d326-4859-a9df-b49dc6226925",
-    "name": "Củ sạc 33W GaN BCH180",
+    "name": "Củ sạc 33W BCH180",
     "price": "199.000",
     "shortDescription": "Củ sạc nhanh Bison 33W GaN BCH180, chính hãng, bảo hành 12 tháng.",
     "description": "Củ sạc nhanh Bison 33W GaN BCH180 chính hãng, công nghệ GaN giúp củ nhỏ gọn, ít nóng. Sạc nhanh cho iPhone, iPad, laptop. Đa cổng USB-C, tương thích PD 3.0. Bảo hành 12 tháng chính hãng. Giao hàng toàn quốc, đổi trả trong 7 ngày nếu lỗi.",
@@ -195,7 +203,8 @@
         "url": "https://youtube.com/shorts/7Y0m7Wa-UQ4?feature=share",
         "thumbnail": "/images/products/bch180.jpg"
       }
-    ]
+    ],
+    "inStock": true
   },
   {
     "id": "5e61512a-8f74-481a-bb57-38b450338b3a",
@@ -217,11 +226,12 @@
         "url": "https://youtube.com/shorts/AfR2Er557zA?feature=share",
         "thumbnail": "/images/products/bch542.webp"
       }
-    ]
+    ],
+    "inStock": true
   },
   {
     "id": "a307505e-060e-49e7-8e5b-a32a03932318",
-    "name": "Củ sạc 33W GaN BCH182",
+    "name": "Củ sạc 33W BCH182",
     "price": "199.000",
     "shortDescription": "Củ sạc nhanh Bison 33W GaN BCH182, chính hãng, bảo hành 12 tháng.",
     "description": "Củ sạc nhanh Bison 33W GaN BCH182 chính hãng, công nghệ GaN giúp củ nhỏ gọn, ít nóng. Sạc nhanh cho iPhone, iPad, laptop. Đa cổng USB-C, tương thích PD 3.0. Bảo hành 12 tháng chính hãng. Giao hàng toàn quốc, đổi trả trong 7 ngày nếu lỗi.",
@@ -239,7 +249,8 @@
         "url": "https://youtube.com/shorts/7Y0m7Wa-UQ4?feature=share",
         "thumbnail": "/images/products/bch182.jpg"
       }
-    ]
+    ],
+    "inStock": true
   },
   {
     "id": "4ab750dd-e327-4150-a0ad-cce9ace88677",
@@ -261,7 +272,8 @@
         "url": "https://youtube.com/shorts/pWCHEutESIk?feature=share",
         "thumbnail": "/images/products/cb119.jpg"
       }
-    ]
+    ],
+    "inStock": true
   },
   {
     "id": "65d17fda-d169-43e2-92a4-8fd84f939741",
@@ -283,7 +295,8 @@
         "url": "https://youtube.com/shorts/2YL_qDFwuPQ?feature=share",
         "thumbnail": "/images/products/cb100.jpg"
       }
-    ]
+    ],
+    "inStock": true
   },
   {
     "id": "0d48720a-c996-4ddf-a9b9-43c32230b288",
@@ -305,7 +318,8 @@
         "url": "https://youtube.com/shorts/RzQrXog44qc?feature=share",
         "thumbnail": "/images/products/cb113.jpg"
       }
-    ]
+    ],
+    "inStock": true
   },
   {
     "id": "c910ba58-294f-4c2f-8c26-3791a53ea1f4",
@@ -327,7 +341,8 @@
         "url": "https://www.youtube.com/shorts/RoHZXK6j75o",
         "thumbnail": "/images/products/cb103.jpg"
       }
-    ]
+    ],
+    "inStock": true
   },
   {
     "id": "c53e2010-900c-4028-b9df-e5f93d7f467e",
@@ -337,7 +352,8 @@
     "description": "Cáp sạc USB to Lightning mã CB105, dùng sạc từ cổng USB thường (laptop, sạc dự phòng). Chất liệu Silicon, bền. Tương thích iPhone 8 trở lên. Bảo hành 12 tháng. Giao hàng toàn quốc.",
     "image": "/images/products/cb105.jpg",
     "category": "sac-cap",
-    "shopeeUrl": "https://vn.shp.ee/KcntnVYF"
+    "shopeeUrl": "https://vn.shp.ee/KcntnVYF",
+    "inStock": true
   },
   {
     "id": "da0c25a4-6795-43c9-a23d-f5d392fd8688",
@@ -359,7 +375,8 @@
         "url": "https://youtu.be/F0bEj9_mr28",
         "thumbnail": "/images/products/cuong-luc-bison.jpg"
       }
-    ]
+    ],
+    "inStock": true
   },
   {
     "id": "ae07a4ed-66dd-4464-83d0-468083f11418",
@@ -370,7 +387,8 @@
     "image": "/images/products/cuongluc-baiko.jpg",
     "category": "cuong-luc",
     "slug": "cuong-luc-baiko",
-    "shopeeUrl": "https://shopee.vn/ngaostore86"
+    "shopeeUrl": "https://shopee.vn/ngaostore86",
+    "inStock": true
   },
   {
     "id": "0da53c14-8f08-4adb-bee5-37fcfc5aff1e",
@@ -381,7 +399,8 @@
     "image": "/images/products/kingkong-cnt.webp",
     "category": "cuong-luc",
     "slug": "cuong-luc-kingkong",
-    "shopeeUrl": "https://shopee.vn/ngaostore86"
+    "shopeeUrl": "https://shopee.vn/ngaostore86",
+    "inStock": true
   },
   {
     "id": "8873fc0d-7295-474e-9c59-53767a22b7c7",
@@ -392,7 +411,8 @@
     "image": "/images/products/silicol.jpg",
     "category": "op-lung",
     "slug": "op-lung-silicon",
-    "shopeeUrl": "https://shopee.vn/ngaostore86"
+    "shopeeUrl": "https://shopee.vn/ngaostore86",
+    "inStock": true
   },
   {
     "id": "8abfe8f0-ff6a-4f86-8015-7c7bf60790fb",
@@ -403,7 +423,8 @@
     "image": "/images/products/magsafe.jpg",
     "category": "op-lung",
     "slug": "op-lung-magsafe",
-    "shopeeUrl": "https://shopee.vn/ngaostore86"
+    "shopeeUrl": "https://shopee.vn/ngaostore86",
+    "inStock": true
   },
   {
     "id": "e361a4d9-f314-4c5e-834e-9a860d75aa55",
@@ -425,6 +446,7 @@
         "url": "https://youtube.com/shorts/XWDAxNxU8qA?si=Rjk8rx5IAzhEAw0o",
         "thumbnail": "/images/products/bts055.jpg"
       }
-    ]
+    ],
+    "inStock": true
   }
 ]
