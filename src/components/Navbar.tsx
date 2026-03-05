@@ -5,7 +5,6 @@ import Link from "next/link";
 import { ShoppingCart, Menu, X, Phone } from "lucide-react";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
-import Image from "next/image";
 
 function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -55,7 +54,10 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
           {/* <div className="bg-primary p-2 rounded-lg">
             <span className="text-white font-bold text-xl">N</span>
           </div> */}
-          <Image src="/logo.png" alt="Ngáo Store Ghép Sim iPhone Lock" width={64} height={64} />
+          <picture className="shrink-0">
+            <source srcSet="/logo-64.webp 1x, /logo-128.webp 2x" type="image/webp" />
+            <img src="/logo-64.webp" alt="Ngáo Store" width={64} height={64} className="h-16 w-16 object-contain" fetchPriority="high" />
+          </picture>
           <span className={cn(
             "font-bold text-xl tracking-tight",
             useDarkStyle ? "text-white" : "text-secondary"
@@ -108,13 +110,16 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
 
         {/* Mobile Toggle */}
         <button
+          type="button"
           className={cn(
-            "md:hidden p-2",
+            "md:hidden p-3 min-w-[44px] min-h-[44px] flex items-center justify-center",
             useDarkStyle ? "text-white" : "text-secondary"
           )}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label={mobileMenuOpen ? "Đóng menu" : "Mở menu"}
+          aria-expanded={mobileMenuOpen}
         >
-          {mobileMenuOpen ? <X /> : <Menu />}
+          {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
@@ -133,7 +138,7 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
           ))}
           <div className="flex flex-col gap-3 mt-4">
             <Link
-              href="tel:0123456789"
+              href="tel:0988012895"
               className="flex items-center justify-center gap-2 text-secondary font-semibold py-3 rounded-xl border border-gray-200"
             >
               <Phone size={18} />

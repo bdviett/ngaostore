@@ -9,11 +9,11 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://ngao.store";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Ghép Sim & Mở Khóa iPhone Lock Giá Rẻ Tại Hà Nội, Đà Nẵng | Ngáo Store | ngao.store",
+    default: "Sim Ghép iPhone Lock Giá Rẻ Hà Nội & Đà Nẵng | Ngáo Store",
     template: "%s | Ngáo Store",
   },
   description:
-    "Sim ghép iPhone Lock chính hãng. Mở khóa iPhone Lock, ghép sim tận nơi Hà Nội & Đà Nẵng. Ghép sim tận nơi, mở khóa quốc tế. Bảo hành 3 tháng. Liên hệ Zalo: 0988 012 895.",
+    "Sim ghép iPhone Lock chính hãng. Mở khóa, ghép sim tận nơi Hà Nội & Đà Nẵng. Fix lỗi danh bạ, 4G ổn định. Bảo hành 3 tháng. Zalo: 0988 012 895.",
   keywords: [
     "sim ghép iphone lock",
     "sim ghép iphone giá rẻ",
@@ -72,15 +72,15 @@ export const metadata: Metadata = {
     locale: "vi_VN",
     url: SITE_URL,
     siteName: "Ngáo Store",
-    title: "Sim Ghép iPhone Lock Giá Rẻ Tại Hà Nội, Đà Nẵng | Ngáo Store | ngao.store",
+    title: "Sim Ghép iPhone Lock Giá Rẻ Hà Nội & Đà Nẵng | Ngáo Store",
     description:
-      "Sim ghép iPhone Lock chính hãng. Ghép sim tận nơi Hà Nội & Đà Nẵng. Fix lỗi danh bạ, 4G/5G ổn định. Bảo hành 3 tháng.",
+      "Sim ghép iPhone Lock chính hãng. Mở khóa, ghép sim tận nơi Hà Nội & Đà Nẵng. Bảo hành 3 tháng. Zalo: 0988 012 895.",
     images: [{ url: "/favicon.png", width: 512, height: 512, alt: "Ngáo Store - Sim Ghép iPhone Lock" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sim Ghép iPhone Lock Giá Rẻ Tại Hà Nội, Đà Nẵng | Ngáo Store | ngao.store",
-    description: "Sim ghép iPhone Lock, mở khóa iPhone. Ghép sim tận nơi Hà Nội & Đà Nẵng. Bảo hành 3 tháng.",
+    title: "Sim Ghép iPhone Lock Giá Rẻ Hà Nội & Đà Nẵng | Ngáo Store",
+    description: "Sim ghép iPhone Lock chính hãng. Ghép sim tận nơi Hà Nội & Đà Nẵng. Bảo hành 3 tháng. Zalo: 0988 012 895.",
   },
   robots: {
     index: true,

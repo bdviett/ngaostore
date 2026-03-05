@@ -10,9 +10,11 @@ import { blogPosts } from "@/data/mock";
 interface BlogProps {
   showViewAll?: boolean;
   useSlideshow?: boolean;
+  /** Dùng H2 thay vì H1 khi component nằm trong trang có H1 riêng (tránh nhiều H1 trên 1 trang) */
+  headingLevel?: "h1" | "h2";
 }
 
-export default function Blog({ showViewAll = false, useSlideshow = true }: BlogProps) {
+export default function Blog({ showViewAll = false, useSlideshow = true, headingLevel = "h1" }: BlogProps) {
   return (
     <section id="blogs" className="py-24 bg-white">
       <div className="container mx-auto px-4">
@@ -20,9 +22,15 @@ export default function Blog({ showViewAll = false, useSlideshow = true }: BlogP
           <p className="text-primary font-bold tracking-widest uppercase text-sm mb-4">
             Video & Hướng dẫn
           </p>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-secondary mb-6 leading-tight">
-            Danh Sách Blog & Video Hướng Dẫn Sim Ghép iPhone Lock | Ngáo Store
-          </h1>
+          {headingLevel === "h2" ? (
+            <h2 className="text-4xl md:text-5xl font-extrabold text-secondary mb-6 leading-tight">
+              Danh Sách Blog & Video Hướng Dẫn Sim Ghép iPhone Lock | Ngáo Store
+            </h2>
+          ) : (
+            <h1 className="text-4xl md:text-5xl font-extrabold text-secondary mb-6 leading-tight">
+              Danh Sách Blog & Video Hướng Dẫn Sim Ghép iPhone Lock | Ngáo Store
+            </h1>
+          )}
           <p className="text-gray-500 text-lg mb-4">
             Hướng dẫn mở khóa iPhone Lock, cách ghép sim, fix các lỗi vặt khi sử dụng và mẹo dùng sim ghép từ Ngáo Store.
           </p>

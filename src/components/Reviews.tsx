@@ -50,12 +50,12 @@ export default function Reviews() {
     <section id="reviews" className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-          <h2 className="text-primary font-bold tracking-widest uppercase text-xs md:text-sm mb-3 md:mb-4">
+          <p className="text-primary font-bold tracking-widest uppercase text-xs md:text-sm mb-3 md:mb-4">
             Đánh giá từ khách hàng
-          </h2>
-          <h3 className="text-3xl md:text-5xl font-extrabold text-secondary mb-4 md:mb-6 leading-tight">
+          </p>
+          <h2 className="text-3xl md:text-5xl font-extrabold text-secondary mb-4 md:mb-6 leading-tight">
             Hơn 10,000+ Khách Hàng Đã Mua Và Đánh Giá Tại Ngáo Store
-          </h3>
+          </h2>
           <p className="text-gray-500 text-base md:text-lg">
             Sự hài lòng của bạn là ưu tiên hàng đầu của chúng tôi. Dưới đây là những đánh giá thực tế từ gian hàng Ngáo Store trên Shopee.
           </p>
@@ -125,9 +125,9 @@ export default function Reviews() {
                     {review.author_username.charAt(0)}
                   </div>
                   <div>
-                    <h4 className="font-bold text-secondary text-sm md:text-base">
+                    <p className="font-bold text-secondary text-sm md:text-base">
                       {review.author_username}
-                    </h4>
+                    </p>
                     <p className="text-[10px] md:text-xs text-gray-400">{review.mtime}</p>
                   </div>
                 </div>

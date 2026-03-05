@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#EF4444", // Red for Ngáo Store
+          DEFAULT: "#DC2626", // Red-600 - better contrast on white (was #EF4444)
           dark: "#B91C1C",
         },
         secondary: {

@@ -48,7 +48,7 @@ export default function Compatibility() {
             <div className="grid sm:grid-cols-2 gap-6">
               {models.map((group, idx) => (
                 <div key={idx} className="bg-white/5 border border-white/10 p-6 rounded-3xl backdrop-blur-sm">
-                  <h4 className="text-primary font-bold mb-4">{group.group}</h4>
+                  <h3 className="text-primary font-bold mb-4">{group.group}</h3>
                   <ul className="space-y-2">
                     {group.items.map((item, i) => (
                       <li key={i} className="text-white/70 text-sm flex items-center gap-2">

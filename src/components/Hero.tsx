@@ -3,7 +3,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Shield, Zap, CheckCircle, ArrowRight } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Hero() {
@@ -73,29 +72,30 @@ export default function Hero() {
           className="relative"
         >
           <div className="relative z-10 bg-gradient-to-br from-white/10 to-white/5 p-4 rounded-[40px] border border-white/10 backdrop-blur-sm">
-            <Image src="/images/hero-banner.png" alt="Ngáo Store Ghép Sim iPhone Lock" width={800} height={800} className="rounded-[30px] shadow-2xl" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/hero-banner-768.webp"
+              srcSet="/images/hero-banner-384.webp 384w, /images/hero-banner-768.webp 768w"
+              sizes="(max-width: 768px) 384px, 768px"
+              alt="Ngáo Store Ghép Sim iPhone Lock"
+              width={768}
+              height={768}
+              className="rounded-[30px] shadow-2xl w-full h-auto"
+              fetchPriority="high"
+            />
 
             <div className="absolute -top-6 -right-6 bg-primary p-6 rounded-3xl shadow-2xl animate-pulse">
               <div className="text-white font-black text-2xl leading-none">24/7</div>
               <div className="text-white/80 text-sm font-bold uppercase mt-1">Hỗ Trợ</div>
             </div>
-          </div >
+          </div>
 
           {/* Decorative shapes */}
-          < div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full border-2 border-white/5 rounded-full scale-125" />
+          <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full border-2 border-white/5 rounded-full scale-125" />
           <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full border-2 border-white/5 rounded-full scale-150" />
-        </motion.div >
-      </div >
+        </motion.div>
+      </div>
 
-      <style jsx global>{`
-        @keyframes bounce-slow {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-15px); }
-        }
-        .animate-bounce-slow {
-          animation: bounce-slow 4s ease-in-out infinite;
-        }
-      `}</style>
-    </section >
+    </section>
   );
 }

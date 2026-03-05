@@ -9,6 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "compress-images": "node scripts/compress-images.js",
+    "optimize-assets": "node scripts/optimize-assets.js",
     "update-products": "node scripts/update-products.js",
     "export-products": "node scripts/export-products.js"
   },

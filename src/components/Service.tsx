@@ -74,9 +74,9 @@ export default function Service() {
               )}
 
               <div className="mb-8">
-                <h4 className={`text-xl font-bold mb-2 ${plan.highlight ? "text-white" : "text-white"}`}>
+                <h3 className={`text-xl font-bold mb-2 ${plan.highlight ? "text-white" : "text-white"}`}>
                   {plan.name}
-                </h4>
+                </h3>
                 <div className="flex items-baseline gap-1">
                   <span className={`text-4xl font-black ${plan.highlight ? "text-white" : "text-white"}`}>
                     {plan.price}

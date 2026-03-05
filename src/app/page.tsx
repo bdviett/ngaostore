@@ -16,8 +16,8 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Features />
-      <ProductList showViewAll />
-      <Blog showViewAll />
+      <ProductList showViewAll headingLevel="h2" />
+      <Blog showViewAll headingLevel="h2" />
       <Service />
       <Reviews />
       <Compatibility />

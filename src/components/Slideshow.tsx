@@ -122,34 +122,33 @@ export default function Slideshow<T>({
       </div>
 
       {totalSlides > 1 && (
-        <div className="flex flex-nowrap items-center justify-center gap-2 sm:gap-4 mt-6 sm:mt-10 px-2">
+        <div className="flex flex-nowrap items-center justify-center gap-2 sm:gap-4 mt-6 sm:mt-10 px-20 md:px-4">
           <button
             type="button"
             onClick={goPrev}
             disabled={clampedIndex <= 0}
-            className={`flex items-center justify-center gap-1 px-3 py-2.5 sm:px-4 sm:py-3 rounded-xl sm:rounded-2xl font-bold text-sm border transition-all shrink-0 ${btnClass}`}
+            className={`flex items-center justify-center gap-1 px-3 py-2.5 sm:px-4 sm:py-3 rounded-xl sm:rounded-2xl font-bold text-sm border transition-all shrink-0 min-w-[44px] min-h-[44px] sm:min-w-0 sm:min-h-0 ${btnClass}`}
             aria-label="Trước"
           >
             <ChevronLeft className="w-5 h-5 shrink-0" />
             <span className="hidden sm:inline">Trước</span>
           </button>
-          {/* Nhiều slide (>6): hiển thị số thay vì dots để tránh tràn trên mobile */}
+          {/* Mobile: luôn dùng số 1/4. Desktop: dots nếu ≤6 slides, else số */}
+          <div className={`flex sm:hidden flex-shrink-0 min-w-[3.5rem] text-center text-sm font-bold tabular-nums text-center justify-center ${isDark ? "text-white/90" : "text-secondary"}`}>
+            {clampedIndex + 1}/{totalSlides}
+          </div>
           {totalSlides > 6 ? (
-            <div
-              className={`flex-shrink-0 min-w-[3.5rem] text-center text-sm font-bold tabular-nums ${
-                isDark ? "text-white/90" : "text-secondary"
-              }`}
-            >
+            <div className={`hidden sm:flex flex-shrink-0 min-w-[3.5rem] text-center text-sm font-bold tabular-nums text-center justify-center ${isDark ? "text-white/90" : "text-secondary"}`}>
               {clampedIndex + 1}/{totalSlides}
             </div>
           ) : (
-            <div className="flex items-center justify-center gap-1.5 flex-nowrap py-1 overflow-x-auto scrollbar-hide max-w-[min(180px,70vw)] sm:max-w-none sm:overflow-visible">
+            <div className="hidden sm:flex items-center justify-center gap-2 flex-1 min-w-0">
               {Array.from({ length: totalSlides }, (_, i) => (
                 <button
                   key={i}
                   type="button"
                   onClick={() => setSlideIndex(i)}
-                  className={`min-w-[0.5rem] w-2 h-2 sm:min-w-[2rem] sm:h-2 rounded-full shrink-0 transition-all ${
+                  className={`w-2 h-2 rounded-full shrink-0 transition-all ${
                     clampedIndex === i
                       ? "bg-primary scale-125"
                       : isDark
@@ -165,7 +164,7 @@ export default function Slideshow<T>({
             type="button"
             onClick={goNext}
             disabled={clampedIndex >= totalSlides - 1}
-            className={`flex items-center justify-center gap-1 px-3 py-2.5 sm:px-4 sm:py-3 rounded-xl sm:rounded-2xl font-bold text-sm border transition-all shrink-0 ${btnClass}`}
+            className={`flex items-center justify-center gap-1 px-3 py-2.5 sm:px-4 sm:py-3 rounded-xl sm:rounded-2xl font-bold text-sm border transition-all shrink-0 min-w-[44px] min-h-[44px] sm:min-w-0 sm:min-h-0 ${btnClass}`}
             aria-label="Sau"
           >
             <span className="hidden sm:inline">Sau</span>

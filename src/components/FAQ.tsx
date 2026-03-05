@@ -52,12 +52,12 @@ export default function FAQ() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row gap-16">
           <div className="lg:w-1/3">
-            <h2 className="text-primary font-bold tracking-widest uppercase text-sm mb-4">
+            <p className="text-primary font-bold tracking-widest uppercase text-sm mb-4">
               Hỏi Đáp Thường Gặp
-            </h2>
-            <h3 className="text-4xl font-black text-secondary mb-6 leading-tight">
+            </p>
+            <h2 className="text-4xl font-black text-secondary mb-6 leading-tight">
               Giải Đáp Thắc Mắc <br /> Của Khách Hàng
-            </h3>
+            </h2>
             <p className="text-gray-500 text-lg mb-8">
               Bạn có câu hỏi khác? Liên hệ ngay với đội ngũ hỗ trợ của chúng tôi để được tư vấn miễn phí.
             </p>

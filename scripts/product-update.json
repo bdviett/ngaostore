@@ -74,7 +74,7 @@
     "slug": "co-sac-bison-33w-gan-bch182",
     "shopeeUrl": "https://vn.shp.ee/sFd1B3Fg",
     "videoUrl": "https://youtube.com/shorts/7Y0m7Wa-UQ4?feature=share",
-    "inStock": true
+    "inStock": false
   },
   "4ab750dd-e327-4150-a0ad-cce9ace88677": {
     "name": "Cáp sạc C to Lightning",
@@ -106,7 +106,7 @@
   },
   "c53e2010-900c-4028-b9df-e5f93d7f467e": {
     "name": "Cáp USB to Lightning",
-    "slug": "cap-usb-to-lightning-c53e2010-900c-4028-b9df-e5f93d7f467e",
+    "slug": "cap-usb-to-lightning-cb105",
     "shopeeUrl": "https://vn.shp.ee/KcntnVYF",
     "inStock": true
   },
@@ -115,7 +115,7 @@
     "slug": "cuong-luc-bison",
     "shopeeUrl": "https://shopee.vn/ngaostore86",
     "videoUrl": "https://youtu.be/F0bEj9_mr28",
-    "inStock": true
+    "inStock": false
   },
   "ae07a4ed-66dd-4464-83d0-468083f11418": {
     "name": "Cường lực Baiko",
@@ -146,6 +146,6 @@
     "slug": "loa-bluetooth-energizer-bts055",
     "shopeeUrl": "https://shopee.vn/ngaostore86",
     "videoUrl": "https://youtube.com/shorts/XWDAxNxU8qA?si=Rjk8rx5IAzhEAw0o",
-    "inStock": true
+    "inStock": false
   }
 }

@@ -20,7 +20,7 @@
         "thumbnail": "/images/products/bs-new.webp"
       }
     ],
-    "inStock": false
+    "inStock": true
   },
   {
     "id": "0c523fab-f5db-4c21-9990-cd4c727a08ad",
@@ -250,7 +250,7 @@
         "thumbnail": "/images/products/bch182.jpg"
       }
     ],
-    "inStock": true
+    "inStock": false
   },
   {
     "id": "4ab750dd-e327-4150-a0ad-cce9ace88677",
@@ -346,6 +346,7 @@
   },
   {
     "id": "c53e2010-900c-4028-b9df-e5f93d7f467e",
+    "slug": "cap-usb-to-lightning-cb105",
     "name": "Cáp USB to Lightning",
     "price": "80.000",
     "shortDescription": "Cáp sạc Bison USB to Lightning, mã CB105, chính hãng, bảo hành 12 tháng.",
@@ -376,7 +377,7 @@
         "thumbnail": "/images/products/cuong-luc-bison.jpg"
       }
     ],
-    "inStock": true
+    "inStock": false
   },
   {
     "id": "ae07a4ed-66dd-4464-83d0-468083f11418",
@@ -447,6 +448,6 @@
         "thumbnail": "/images/products/bts055.jpg"
       }
     ],
-    "inStock": true
+    "inStock": false
   }
 ]
