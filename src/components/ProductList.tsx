@@ -44,7 +44,7 @@ export default function ProductList({ showViewAll = false, useSlideshow = true, 
     <section id="products" className="py-24 bg-secondary-dark">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <p className="text-primary font-bold tracking-widest uppercase text-sm mb-4">
+          <p className="text-red-400 font-bold tracking-widest uppercase text-sm mb-4">
             Sản phẩm
           </p>
           {headingLevel === "h2" ? (

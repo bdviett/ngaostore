@@ -150,7 +150,7 @@ export default function ThayOSimIphoneLock() {
             </div>
             <div className="bg-primary/5 rounded-2xl p-8 border-2 border-primary/30">
               <h3 className="text-xl font-bold text-secondary mb-4">Ổ sim EID sẵn sim ghép</h3>
-              <div className="text-2xl font-black text-primary mb-2">250.000đ</div>
+              <div className="text-2xl font-black text-primary mb-2">300.000đ</div>
               <p className="text-secondary/70 text-sm mb-4">
                 Ổ sim EID tích hợp sẵn sim ghép, lắp vào là dùng ngay. Hỗ trợ iPhone 12 series – 17 Pro Max.
               </p>

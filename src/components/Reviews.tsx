@@ -89,13 +89,13 @@ export default function Reviews() {
                 {/* Product and Model info */}
                 <div className="mb-4 md:mb-6 space-y-2">
                   {review.product_name && (
-                    <div className="flex items-start gap-2 text-[10px] md:text-xs text-gray-400">
+                    <div className="flex items-start gap-2 text-[10px] md:text-xs text-gray-500">
                       <Tag className="w-3 h-3 mt-0.5 flex-shrink-0" />
                       <span className="line-clamp-1">{review.product_name}</span>
                     </div>
                   )}
                   {review.model_name && (
-                    <div className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-primary/5 text-primary text-[9px] md:text-[10px] font-bold uppercase rounded-full">
+                    <div className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-red-100 text-primary text-[9px] md:text-[10px] font-bold uppercase rounded-full">
                       <Smartphone className="w-3 h-3" />
                       <span>Model: {review.model_name}</span>
                     </div>
@@ -128,7 +128,7 @@ export default function Reviews() {
                     <p className="font-bold text-secondary text-sm md:text-base">
                       {review.author_username}
                     </p>
-                    <p className="text-[10px] md:text-xs text-gray-400">{review.mtime}</p>
+                    <p className="text-[10px] md:text-xs text-gray-500">{review.mtime}</p>
                   </div>
                 </div>
               </div>

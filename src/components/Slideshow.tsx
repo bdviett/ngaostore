@@ -148,15 +148,19 @@ export default function Slideshow<T>({
                   key={i}
                   type="button"
                   onClick={() => setSlideIndex(i)}
-                  className={`w-2 h-2 rounded-full shrink-0 transition-all ${
-                    clampedIndex === i
-                      ? "bg-primary scale-125"
-                      : isDark
-                        ? "bg-white/30 hover:bg-white/50"
-                        : "bg-gray-200 hover:bg-gray-300"
-                  }`}
+                  className="group min-w-[44px] min-h-[44px] rounded-full shrink-0 flex items-center justify-center"
                   aria-label={`Slide ${i + 1}`}
-                />
+                >
+                  <span
+                    className={`w-2 h-2 rounded-full transition-all ${
+                      clampedIndex === i
+                        ? "bg-primary scale-125"
+                        : isDark
+                          ? "bg-white/30 group-hover:bg-white/50"
+                          : "bg-gray-200 group-hover:bg-gray-300"
+                    }`}
+                  />
+                </button>
               ))}
             </div>
           )}

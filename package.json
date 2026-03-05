@@ -2,9 +2,15 @@
   "name": "ngao-store-landing",
   "version": "0.1.0",
   "private": true,
+  "browserslist": [
+    "Chrome >= 93",
+    "Firefox >= 92",
+    "Safari >= 15.4",
+    "Edge >= 93"
+  ],
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && node scripts/inject-font-preload.js",
     "build:firebase": "next build && firebase deploy",
     "start": "next start",
     "lint": "next lint",

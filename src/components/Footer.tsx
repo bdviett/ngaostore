@@ -32,10 +32,10 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-lg font-bold mb-8 relative inline-block">
+            <h3 className="text-lg font-bold mb-8 relative inline-block">
               Sản Phẩm
               <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-primary rounded-full" />
-            </h4>
+            </h3>
             <ul className="space-y-4 text-white/60">
               <li><Link target="_blank" href="/products/sim-ghep-bison-new-2025" className="hover:text-primary transition-all flex items-center gap-2"><ExternalLink size={14} /> Sim Ghép TMSI/QPE</Link></li>
               <li><Link target="_blank" href="/products/sim-ghep-eid" className="hover:text-primary transition-all flex items-center gap-2"><ExternalLink size={14} /> Sim Ghép EID</Link></li>
@@ -45,10 +45,10 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-lg font-bold mb-8 relative inline-block">
+            <h3 className="text-lg font-bold mb-8 relative inline-block">
               Chính Sách
               <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-primary rounded-full" />
-            </h4>
+            </h3>
             <ul className="space-y-4 text-white/60">
               <li><Link href="#" className="hover:text-primary transition-all">Chính sách bảo hành</Link></li>
               <li><Link href="#" className="hover:text-primary transition-all">Chính sách vận chuyển</Link></li>
@@ -58,17 +58,17 @@ export default function Footer() {
           </div>
 
           <div itemScope itemType="https://schema.org/LocalBusiness">
-            <h4 className="text-lg font-bold mb-8 relative inline-block">
+            <h3 className="text-lg font-bold mb-8 relative inline-block">
               Liên Hệ
               <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-primary rounded-full" />
-            </h4>
+            </h3>
             <ul className="space-y-6">
               <li className="flex gap-4" itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
                 <div className="w-10 h-10 shrink-0 rounded-xl bg-primary/20 flex items-center justify-center text-primary">
                   <MapPin size={20} />
                 </div>
                 <div>
-                  <div className="text-sm text-white/40 mb-1 font-bold uppercase tracking-wider">Địa chỉ</div>
+                  <div className="text-sm text-white/60 mb-1 font-bold uppercase tracking-wider">Địa chỉ</div>
                   <div className="text-white/80" itemProp="streetAddress"><a href="https://maps.app.goo.gl/PrvGM2vGQftcbCMb8" target="_blank" rel="noopener noreferrer">CS1: Số 10 ngõ 28B Hạ Đình, Thanh Xuân, Hà Nội</a></div>
                   <div className="text-white/80"><a href="https://maps.app.goo.gl/r3YDACgDfkLD7H9t9" target="_blank" rel="noopener noreferrer">CS2: 82 Duy Tân, Hà Nội</a></div>
                   <div className="text-white/80"><a href="https://maps.app.goo.gl/oLKE6XtCXRwicWdK6" target="_blank" rel="noopener noreferrer">CS3: Hòa Quý, Đà Nẵng</a></div>
@@ -79,7 +79,7 @@ export default function Footer() {
                   <Phone size={20} />
                 </div>
                 <div>
-                  <div className="text-sm text-white/40 mb-1 font-bold uppercase tracking-wider">Hotline</div>
+                  <div className="text-sm text-white/60 mb-1 font-bold uppercase tracking-wider">Hotline</div>
                   <div className="text-white/80 font-bold"><a href="tel:+84988012895">0988 012 895</a></div>
                 </div>
               </li>
@@ -88,10 +88,10 @@ export default function Footer() {
         </div>
 
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="text-white/40 text-sm">
+          <div className="text-white/60 text-sm">
             © {new Date().getFullYear()} Ngáo Store. Tất cả quyền được bảo lưu.
           </div>
-          <div className="flex gap-8 text-white/40 text-sm">
+          <div className="flex gap-8 text-white/60 text-sm">
             <Link href="#" className="hover:text-white transition-all">Điều khoản</Link>
             <Link href="#" className="hover:text-white transition-all">Quyền riêng tư</Link>
           </div>

@@ -32,7 +32,7 @@ export default function Hero() {
 
           <p className="text-white/60 text-lg md:text-xl mb-8 max-w-xl leading-relaxed">
           Ngáo Store – Chuyên sim ghép và các giải pháp mở khóa iPhone Lock uy tín, chuyên nghiệp tại Hà Nội & Đà Nẵng. Hỗ trợ ghép sim tận nơi nhanh chóng. <br />
-          Zalo: <a href="https://zalo.me/0988012895" className="text-primary hover:underline">0988-012-895</a>
+          Zalo: <a href="https://zalo.me/0988012895" className="text-red-400 hover:text-red-300 hover:underline font-medium">0988-012-895</a>
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-10">
@@ -74,9 +74,9 @@ export default function Hero() {
           <div className="relative z-10 bg-gradient-to-br from-white/10 to-white/5 p-4 rounded-[40px] border border-white/10 backdrop-blur-sm">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/hero-banner-768.webp"
+              src="/images/hero-banner-384.webp"
               srcSet="/images/hero-banner-384.webp 384w, /images/hero-banner-768.webp 768w"
-              sizes="(max-width: 768px) 384px, 768px"
+              sizes="(max-width: 768px) 192px, 768px"
               alt="Ngáo Store Ghép Sim iPhone Lock"
               width={768}
               height={768}

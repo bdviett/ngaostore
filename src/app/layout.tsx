@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin", "vietnamese"] });
+const inter = Inter({
+  subsets: ["latin", "vietnamese"],
+  display: "swap",
+  preload: true,
+});
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://ngao.store";
 
@@ -114,7 +118,7 @@ const jsonLdLocalBusiness = {
     addressCountry: "VN",
   },
   areaServed: [{ "@type": "City", name: "Hà Nội" }, { "@type": "City", name: "Đà Nẵng" }],
-  priceRange: "99.000đ - 250.000đ",
+  priceRange: "99.000đ - 300.000đ",
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
     dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],

@@ -18,7 +18,7 @@ function blogUrl(slug: string) {
 
 export const BLOG_ARTICLE_METADATA: Record<
   BlogArticleSlug,
-  { title: string; description: string; keywords: string[]; breadcrumbName: string }
+  { title: string; description: string; keywords: string[]; breadcrumbName: string; image?: string }
 > = {
   "sim-ghep-ha-noi": {
     title: "Sim Ghép Tại Hà Nội | Ghép Sim iPhone Lock & Mở Khóa Chuyên Nghiệp | Ngáo Store",
@@ -35,6 +35,7 @@ export const BLOG_ARTICLE_METADATA: Record<
       "mở khóa iphone lock tại hà nội",
     ],
     breadcrumbName: "Sim Ghép Hà Nội",
+    image: "/images/ghep-sim-ha-noi.png",
   },
   "sim-ghep-da-nang": {
     title: "Sim Ghép Đà Nẵng | Ghép Sim iPhone Lock & Mở Khóa Tận Nơi | Ngáo Store",
@@ -49,6 +50,7 @@ export const BLOG_ARTICLE_METADATA: Record<
       "sim ghép ngũ hành sơn",
     ],
     breadcrumbName: "Sim Ghép Đà Nẵng",
+    image: "/images/ghep-sim-da-nang.png",
   },
   "ghep-sim-iphone-lock": {
     title: "Ghép Sim iPhone Lock | Dịch Vụ Ghép Sim Chuyên Nghiệp Hà Nội & Đà Nẵng | Ngáo Store",
@@ -63,6 +65,7 @@ export const BLOG_ARTICLE_METADATA: Record<
       "sim ghép iphone lock",
     ],
     breadcrumbName: "Ghép Sim iPhone Lock",
+    image: "/images/unlock-3.png",
   },
   "mua-sim-ghep": {
     title: "Mua Sim Ghép | Sim Ghép iPhone Lock Bison, Heicard Chính Hãng | Ngáo Store",
@@ -77,6 +80,7 @@ export const BLOG_ARTICLE_METADATA: Record<
       "mua sim ghép ở đâu",
     ],
     breadcrumbName: "Mua Sim Ghép",
+    image: "/images/mua-sim-ghep.png",
   },
   "thay-o-sim-eid-iphone-lock": {
     title: "Thay Ổ Sim EID iPhone Lock | Dịch Vụ Thay Ổ Sim Chuyên Nghiệp | Ngáo Store",
@@ -93,6 +97,7 @@ export const BLOG_ARTICLE_METADATA: Record<
       "thay ổ sim eid sẵn sim ghép",
     ],
     breadcrumbName: "Thay Ổ Sim EID iPhone Lock",
+    image: "/images/do-o-sim-eid.png",
   },
 };
 
@@ -100,6 +105,9 @@ export function getBlogArticleMetadata(slug: string): Metadata | null {
   const meta = BLOG_ARTICLE_METADATA[slug as BlogArticleSlug];
   if (!meta) return null;
   const url = blogUrl(slug);
+  const ogImage = meta.image
+    ? { url: meta.image, width: 1200, height: 630, alt: meta.breadcrumbName }
+    : undefined;
   return {
     title: meta.title,
     description: meta.description,
@@ -109,7 +117,12 @@ export function getBlogArticleMetadata(slug: string): Metadata | null {
       title: meta.title,
       description: meta.description,
       url,
+      type: "article",
+      ...(ogImage && { images: [ogImage] }),
     },
+    ...(ogImage && {
+      twitter: { card: "summary_large_image", title: meta.title, description: meta.description },
+    }),
   };
 }
 
@@ -133,7 +146,7 @@ export function getBlogArticleJsonLd(slug: string) {
         addressCountry: "VN",
       },
       areaServed: { "@type": "City", name: "Hà Nội" },
-      priceRange: "99.000đ - 250.000đ",
+      priceRange: "99.000đ - 300.000đ",
       openingHoursSpecification: {
         "@type": "OpeningHoursSpecification",
         dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
@@ -158,7 +171,7 @@ export function getBlogArticleJsonLd(slug: string) {
         addressCountry: "VN",
       },
       areaServed: { "@type": "City", name: "Đà Nẵng" },
-      priceRange: "99.000đ - 250.000đ",
+      priceRange: "99.000đ - 300.000đ",
       openingHoursSpecification: {
         "@type": "OpeningHoursSpecification",
         dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
