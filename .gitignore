@@ -4,3 +4,7 @@ out/
 .firebase/
 .firebaserc
 .firebase.json
+.env
+.env.local
+.env.example
+functions/.env

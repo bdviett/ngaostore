@@ -1,0 +1,6 @@
+name = "ngaostore-order-notify"
+main = "order-notify.js"
+compatibility_date = "2024-01-01"
+
+# Workers.dev subdomain: ngaostore-order-notify.<your-subdomain>.workers.dev
+# Hoặc thêm route custom domain nếu cần

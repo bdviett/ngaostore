@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { ShoppingCart, Menu, X, Phone } from "lucide-react";
+import { useCart } from "@/contexts/CartContext";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 
@@ -18,6 +19,7 @@ interface NavbarProps {
 export default function Navbar({ variant = "default" }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { count: cartCount } = useCart();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -66,8 +68,8 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
           </span>
         </Link>
 
-        {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8">
+        {/* Desktop Nav (lg+) */}
+        <div className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
             <Link
               key={link.name}
@@ -82,9 +84,26 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
           ))}
         </div>
 
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden lg:flex items-center gap-4">
           <Link
-            href="http://zalo.me/0988012895"
+            href="/cart"
+            className={cn(
+              "relative flex items-center gap-2 text-sm font-semibold px-4 py-2 rounded-full border transition-all",
+              useDarkStyle
+                ? "border-white/20 text-white hover:bg-white/10"
+                : "border-secondary/20 text-secondary hover:bg-secondary/5"
+            )}
+          >
+            <ShoppingCart size={18} />
+            Giỏ hàng
+            {cartCount > 0 && (
+              <span className="absolute -top-1 -right-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-primary text-xs font-bold text-white">
+                {cartCount > 99 ? "99+" : cartCount}
+              </span>
+            )}
+          </Link>
+          <Link
+            href="/support"
             className={cn(
               "flex items-center gap-2 text-sm font-semibold px-4 py-2 rounded-full border transition-all",
               useDarkStyle
@@ -97,6 +116,7 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
           </Link>
           <Link
             href="https://shopee.vn/ngaostore86"
+            target="_blank"
             className={cn(
               "bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-full font-semibold transition-all shadow-lg shadow-primary/20 hover:shadow-primary/40",
               useDarkStyle
@@ -104,28 +124,45 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
                 : "border-secondary/20 hover:bg-primary"
             )}
           >
-            Mua hàng tại Shopee
+            Ghé thăm Shopee
           </Link>
         </div>
 
-        {/* Mobile Toggle */}
-        <button
-          type="button"
-          className={cn(
-            "md:hidden p-3 min-w-[44px] min-h-[44px] flex items-center justify-center",
-            useDarkStyle ? "text-white" : "text-secondary"
-          )}
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          aria-label={mobileMenuOpen ? "Đóng menu" : "Mở menu"}
-          aria-expanded={mobileMenuOpen}
-        >
-          {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        {/* Mobile + Tablet: Cart + Menu */}
+        <div className="flex lg:hidden items-center gap-1">
+          <Link
+            href="/cart"
+            className={cn(
+              "relative p-3 min-w-[44px] min-h-[44px] flex items-center justify-center",
+              useDarkStyle ? "text-white" : "text-secondary"
+            )}
+            aria-label={`Giỏ hàng${cartCount > 0 ? ` (${cartCount})` : ""}`}
+          >
+            <ShoppingCart size={24} />
+            {cartCount > 0 && (
+              <span className="absolute top-1 right-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-primary text-xs font-bold text-white">
+                {cartCount > 99 ? "99+" : cartCount}
+              </span>
+            )}
+          </Link>
+          <button
+            type="button"
+            className={cn(
+              "p-3 min-w-[44px] min-h-[44px] flex items-center justify-center",
+              useDarkStyle ? "text-white" : "text-secondary"
+            )}
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label={mobileMenuOpen ? "Đóng menu" : "Mở menu"}
+            aria-expanded={mobileMenuOpen}
+          >
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile + Tablet Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-xl py-6 px-4 flex flex-col gap-4 animate-in fade-in slide-in-from-top-4 duration-300">
+        <div className="lg:hidden absolute top-full left-0 right-0 bg-white shadow-xl py-6 px-4 flex flex-col gap-4 animate-in fade-in slide-in-from-top-4 duration-300">
           {navLinks.map((link) => (
             <Link
               key={link.name}
@@ -137,6 +174,14 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
             </Link>
           ))}
           <div className="flex flex-col gap-3 mt-4">
+            <Link
+              href="/cart"
+              className="flex items-center justify-center gap-2 text-secondary font-semibold py-3 rounded-xl border border-gray-200"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <ShoppingCart size={18} />
+              Giỏ hàng {cartCount > 0 && `(${cartCount})`}
+            </Link>
             <Link
               href="tel:0988012895"
               className="flex items-center justify-center gap-2 text-secondary font-semibold py-3 rounded-xl border border-gray-200"

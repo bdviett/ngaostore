@@ -8,6 +8,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Phone, ShieldCheck, Truck } from "lucide-react";
+import AddToCartButton from "@/components/product/AddToCartButton";
 
 export function generateStaticParams() {
   return products.map((p) => ({ slug: getProductSlug(p) }));
@@ -118,27 +119,28 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
               </div>
               <p className="text-gray-600 leading-relaxed">{product.description}</p>
 
-              <div className="flex flex-col sm:flex-row gap-4 pt-2">
-                <Link
-                  href={ZALO_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center flex-1 px-10 py-4 rounded-2xl font-bold text-lg bg-primary hover:bg-primary-dark text-white shadow-lg shadow-primary/25 transition-all hover:shadow-primary/40"
-                >
-                  Tư vấn, hỗ trợ qua Zalo
-                </Link>
-                <Link
+              <div className="rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800">
+                <a
                   href={product.shopeeUrl || SHOPEE_FALLBACK}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`inline-flex items-center justify-center flex-1 px-10 py-4 rounded-2xl font-bold text-lg transition-all ${
-                    inStock
-                      ? "border-2 border-primary text-primary hover:bg-primary hover:text-white"
-                      : "border-2 border-gray-300 text-gray-500 hover:bg-gray-100"
-                  }`}
+                  className="font-semibold underline hover:text-amber-900"
                 >
-                  {inStock ? "Mua ngay tại Shopee" : "Xem trên Shopee"}
-                </Link>
+                  Mua qua Shopee
+                </a>
+                <span className="ml-1">— giá sẽ cao hơn vì phí sàn</span>
+              </div>
+
+              <div className="flex flex-col gap-4 pt-2 sm:flex-row sm:flex-wrap">
+                {inStock && (
+                  <Link
+                    href={`/checkout?slug=${getProductSlug(product)}`}
+                    className="inline-flex flex-1 items-center justify-center rounded-2xl bg-primary px-10 py-4 font-bold text-lg text-white shadow-lg shadow-primary/25 transition-all hover:bg-primary-dark hover:shadow-primary/40"
+                  >
+                    Mua ngay
+                  </Link>
+                )}
+                <AddToCartButton productSlug={getProductSlug(product)} inStock={inStock} />
               </div>
 
               <div className="mt-6 p-6 rounded-2xl bg-primary/5 border-2 border-primary/20 shadow-sm">
@@ -152,7 +154,7 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
                     <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/15 text-primary">
                       <Phone size={20} />
                     </span>
-                    <span>Hỗ trợ ghép miễn phí</span>
+                    <span>Tư vấn & hỗ trợ ghép sim miễn phí</span>
                   </a>
                   <div className="flex items-center gap-3 text-secondary">
                     <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/15 text-primary">

@@ -1,0 +1,8 @@
+{
+  "name": "ngaostore-functions",
+  "type": "module",
+  "main": "index.js",
+  "dependencies": {
+    "firebase-functions": "^7.1.1"
+  }
+}

@@ -33,7 +33,7 @@ export default function Footer() {
 
           <div>
             <h3 className="text-lg font-bold mb-8 relative inline-block">
-              Sản Phẩm
+              Dịch Vụ
               <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-primary rounded-full" />
             </h3>
             <ul className="space-y-4 text-white/60">

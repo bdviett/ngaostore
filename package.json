@@ -12,6 +12,7 @@
     "dev": "next dev",
     "build": "next build && node scripts/inject-font-preload.js",
     "build:firebase": "next build && firebase deploy",
+    "deploy:worker": "cd workers && npx wrangler deploy",
     "start": "next start",
     "lint": "next lint",
     "compress-images": "node scripts/compress-images.js",
@@ -22,6 +23,7 @@
   "dependencies": {
     "axios": "^1.13.4",
     "clsx": "^2.1.1",
+    "firebase-functions": "^7.1.1",
     "framer-motion": "^11.1.7",
     "lucide-react": "^0.378.0",
     "next": "14.2.35",

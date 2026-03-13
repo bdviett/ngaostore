@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { CartProvider } from "@/contexts/CartContext";
+//import StickyCart from "@/components/StickyCart";
 
 const inter = Inter({
   subsets: ["latin", "vietnamese"],
@@ -165,7 +168,19 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdWebSite) }}
         />
-        {children}
+        <CartProvider>
+          {children}
+          {/* <StickyCart /> */}
+        </CartProvider>
+        <Script
+          src="https://api.cocachat.com/widget/chatbox-widget.js?v=1772380741"
+          strategy="lazyOnload"
+          data-widget-key="wgt_34ToPehOGQWj6X9CMhew28hQuQCJi7fJ"
+          data-api-url="https://api.cocachat.com/open/v1"
+          data-primary-color="#3B82F6"
+          data-position="bottom-left"
+          data-bot-icon="chat-bubble"
+        />
       </body>
     </html>
   );
